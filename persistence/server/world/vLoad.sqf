@@ -119,7 +119,7 @@ _exclVehicleIDs = [];
 
 		{ _veh setVariable [_x select 0, _x select 1, true] } forEach _variables;
 
-		if (!isNil {_veh getVariable "ownerUID"}) then {
+		if (["A3W_vehicleLocking"] call isConfigOn && !isNil {_veh getVariable "ownerUID"}) then {
 			_veh lock 2;
 			_veh setVariable ["R3F_LOG_disabled",true,true];
 		};
