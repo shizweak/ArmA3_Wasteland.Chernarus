@@ -69,7 +69,7 @@ if (isServer) then
 };
 
 //init 3rd Party Scripts
-if(["A3W_vehicleLocking"] call isConfigOn) then {
+if (["A3W_vehicleLocking"] call isConfigOn) then {
 	[] execVM "addons\vactions\functions.sqf";	
 };
 
