@@ -29,8 +29,8 @@ class Mission
 	randomSeed=7312376;
 	class Intel
 	{
-		briefingName="TOP A3Wasteland Chernarus v1.1 extDB";
-		overviewText="TOP Wasteland Conquest Chernarus by TOPARMA.com - Core developed by A3Wasteland.com";
+		briefingName="Shizweak Chernarus A3Wasteland ";
+		overviewText="Chernarus A3Wasteland by www.shizweak.es - Core developed by TOPARMA/A3Wasteland.com";
 		resistanceWest=0;
 		startWeather=0.25;
 		startWind=0.099999994;
