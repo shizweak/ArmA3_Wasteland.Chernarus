@@ -169,3 +169,5 @@ if (["A3W_disableArtilleryComputer"] call isConfigOn) then
 {
   enableEngineArtillery false;
 };
+
+enableCamShake false;
