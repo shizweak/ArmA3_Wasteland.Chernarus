@@ -1178,6 +1178,14 @@ landArray = compileFinal str
 
 
 //AFRF
+
+	["Quadbike (Civilian)", "C_Quadbike_01_F", 600, "vehicle"],
+	["SUV", "C_SUV_01_F", 1100, "vehicle"],
+	["Offroad", "C_Offroad_01_F", 1100, "vehicle"],
+	["Offroad Camo", "B_G_Offroad_01_F", 1250, "vehicle"],
+	["Offroad Repair", "C_Offroad_01_repair_F", 1500, "vehicle"],
+	["Offroad HMG", "B_G_Offroad_01_armed_F", 2500, "vehicle"],
+
 	["Kamaz-63968 VDV", "rhs_typhoon_vdv", 800, "vehicle"],
 
 		//======== in for testing (maybe radar placement)=========
@@ -1234,7 +1242,13 @@ landArray = compileFinal str
 	["M998, 4dr cgo/trp carr, softop", "rhsusf_m998_w_4dr_fulltop", 800, "vehicle"],
 	["M998, 4dr cgo/trp carr, softop", "rhsusf_m998_d_4dr_fulltop", 800, "vehicle"],
 	["M998, 4dr cgo/trp carr, softop w/ snorkel", "rhsusf_m998_w_s_4dr_fulltop", 800, "vehicle"],
-	["M998, 4dr cgo/trp carr, softop w/ snorkel", "rhsusf_m998_d_s_4dr_fulltop", 800, "vehicle"]
+	["M998, 4dr cgo/trp carr, softop w/ snorkel", "rhsusf_m998_d_s_4dr_fulltop", 800, "vehicle"],
+
+	["Zamak Transport", "I_Truck_02_transport_F", 4000, "vehicle"],
+	["Zamak Covered", "I_Truck_02_covered_F", 5000, "vehicle"],
+	["Zamak Fuel", "I_Truck_02_fuel_F", 7500, "vehicle"],
+	["Zamak Medical", "I_Truck_02_medical_F", 9000, "vehicle"],
+	["Zamak Repair", "I_Truck_02_box_F", 10000, "vehicle"]
 
 
 /*
@@ -1440,9 +1454,9 @@ tanksArray = compileFinal str
 	["T-72Bb", "rhs_t72bb_tv", 60000, "vehicle"],
 	["T-72Bc", "rhs_t72bc_tv", 60000, "vehicle"],
 	["T-72B3", "rhs_t72bd_tv", 60000, "vehicle"],
-		//["T-80", "rhs_t80", 70000, "vehicle"],
-		//["T-80A", "rhs_t80a", 70000, "vehicle"],
-		//["T-80B", "rhs_t80b", 70000, "vehicle"],
+	["T-80", "rhs_t80", 70000, "vehicle"],
+	["T-80A", "rhs_t80a", 70000, "vehicle"],
+	["T-80B", "rhs_t80b", 70000, "vehicle"],
 		//["T-80BK", "rhs_t80bk", 70000, "vehicle"],
 		//["T-80BV", "rhs_t80bv", 70000, "vehicle"],
 		//["T-80BVK", "rhs_t80bvk", 70000, "vehicle"],
@@ -1478,6 +1492,8 @@ tanksArray = compileFinal str
 
 helicoptersArray = compileFinal str
 [
+	["MH-9 Hummingbird", "B_Heli_Light_01_F", 3500, "vehicle"],
+	["AH-9 Pawnee", "B_Heli_Light_01_armed_F", 35000, "vehicle"],
 
 //AFRF
 	["Ka52 Grey", "RHS_Ka52_vvs", 65000, "vehicle"],
@@ -1522,9 +1538,9 @@ helicoptersArray = compileFinal str
 	["UH-60M MEV Woodland", "rhs_uh60m_mev", 8000, "vehicle"],
 	["UH-60M MEV Desert", "rhs_uh60m_mev_d", 8000, "vehicle"]
 
+
 /*
 	["M-900 Civilian", "C_Heli_Light_01_civil_F", 4000, "vehicle"], // MH-6, no flares
-	["MH-9 Hummingbird", "B_Heli_Light_01_F", 5000, "vehicle"], // MH-6
 	["PO-30 Orca (Black)", "O_Heli_Light_02_unarmed_F", 7000, "vehicle"], // Ka-60
 	["WY-55 Hellcat (Green)", "I_Heli_light_03_unarmed_F", 7000, "vehicle"], // AW159
 	["Mi-290 Taru (Crane) [DLC]", "O_Heli_Transport_04_F", 7500, "vehicle"], // CH-54
@@ -1540,7 +1556,6 @@ helicoptersArray = compileFinal str
 	["UH-80 Ghost Hawk (Black)", "B_Heli_Transport_01_F", 25000, "vehicle"], // UH-60 Stealth with 2 side miniguns
 	["UH-80 Ghost Hawk (Green)", "B_Heli_Transport_01_camo_F", 25000, "vehicle"], // UH-60 Stealth with 2 side miniguns (green camo)
 	["CH-67 Huron (Armed) [DLC]", "B_Heli_Transport_03_F", 30000, "vehicle"], // CH-47 with 2 side miniguns
-	["AH-9 Pawnee", "B_Heli_Light_01_armed_F", 30000, "vehicle"], // Armed AH-6
 	["PO-30 Orca (Armed, Black)", "O_Heli_Light_02_v2_F", 30000, "vehicle"], // Armed Ka-60 with orca paintjob
 	["PO-30 Orca (Armed, Hex)", "O_Heli_Light_02_F", 35000, "vehicle"], // Armed Ka-60
 	["WY-55 Hellcat (Armed)", "I_Heli_light_03_F", 40000, "vehicle"], // Armed AW159
