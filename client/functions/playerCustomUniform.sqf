@@ -19,10 +19,9 @@ _uniformNumber = player getVariable ["uniform", 0];
 
 if (!(_customUniformEnabled) || _uniformNumber < 1) exitWith {};
 
-
+/*
 switch (_side) do
 {
-/*
 	case BLUFOR:
 	{
 		[] spawn
@@ -52,7 +51,7 @@ switch (_side) do
 			};
 		};	
 	};
-*/
+
 	case INDEPENDENT:
 	{
 		[] spawn
@@ -69,4 +68,4 @@ switch (_side) do
 	};
 
 };
-
+*/
