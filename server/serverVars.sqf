@@ -25,7 +25,12 @@ civilianVehicles =
   "rhs_uaz_vmf",
   "rhs_uaz_vdv",
   "rhs_uaz_vv",
-  "rhs_uaz_msv"
+  "rhs_uaz_msv",
+  "C_SUV_01_F",
+  "C_Offroad_01_F",
+  "B_G_Offroad_01_F",
+  "C_Offroad_01_repair_F",
+  "I_Truck_02_transport_F"
 ];
 
 //Light Military Vehicle List - Random Spawns
@@ -39,7 +44,8 @@ lightMilitaryVehicles =
 //  "I_Truck_02_covered_F",
 //  "O_Truck_02_transport_F",
 //  "I_Truck_02_transport_F",
-  "rhsusf_m1025_w_s_m2"
+  "rhsusf_m1025_w_s_m2",
+  "B_G_Offroad_01_armed_F"
 ];
 
 //Medium Military Vehicle List - Random Spawns
@@ -153,9 +159,9 @@ staticHeliList =
 //Object List - Random Planes.
 staticPlaneList =
 [
-  "B_Plane_CAS_01_F",
-  "O_Plane_CAS_02_F",
-  "I_Plane_Fighter_03_CAS_F"
+  "RHS_Su25SM_vvs",
+  "RHS_Su25SM_vvsc",
+  "rhs_a10"
 ];
 
 //Random Weapon List - Change this to what you want to spawn in cars.
