@@ -2949,8 +2949,9 @@ class Mission
 			type="Empty";
 			colorName="ColorBlack";
 			angle=-27.134336;
-				{
+		};
 		class Item105
+		{
 			position[]={8416,360.5,6685};
 			name="VehStore3_landSpawn";
 			type="Empty";
@@ -2963,7 +2964,8 @@ class Mission
 			name="VehStore3_heliSpawn";
 			type="Empty";
 			colorName="ColorBlack";
-			angle=-27.849197;	
+			angle=-27.849197;
+		};
 	};
 };
 class Intro
