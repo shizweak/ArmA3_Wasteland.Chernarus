@@ -2161,7 +2161,7 @@ class Mission
 	};
 	class Markers
  	{
-		items=102;
+		items=107;
 		class Item0
 		{
 			position[]={428.31763,634.75702,15125.764};
@@ -2884,6 +2884,44 @@ class Mission
 			type="Empty";
 			colorName="ColorRed";
 		};
+		{
+		class Item102
+			position[]={fixtheseforbalota};
+			name="VehStore1_landSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=-206.70099;
+		};
+		class Item103
+		{
+			position[]={fixtheseforbalota};
+			name="VehStore1_heliSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=-27.849197;
+		};
+		class Item104
+		{
+			position[]={fixtheseforbalota};
+			name="VehStore1_planeSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=-27.134336;
+				{
+		class Item105
+			position[]={fixtheseforgorka};
+			name="VehStore3_landSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=-206.70099;
+		};
+		class Item106
+		{
+			position[]={fixtheseforgorka};
+			name="VehStore3_heliSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=-27.849197;	
 	};
 };
 class Intro
