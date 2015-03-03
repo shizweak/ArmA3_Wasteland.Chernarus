@@ -10,8 +10,6 @@ _vehCount = _this select 1;
 _fileName = "Vehicles" call PDB_objectFileName;
 _oldVehCount = [_fileName, "Info", "VehCount", "NUMBER"] call PDB_read; // iniDB_read
 
-[_fileName, "Info", "VehCount", _vehCount] call PDB_write; // iniDB_write
-
 // Reverse-delete old vehicles
 if (_oldVehCount > _vehCount) then
 {
@@ -26,3 +24,5 @@ if (call A3W_savingMethod == "profile") then
 	saveProfileNamespace; // this line is crucial to ensure all profileNamespace data submitted to the server is saved
 	diag_log "A3W - profileNamespace saved";
 };
+
+[_fileName, "Info", "VehCount", _vehCount] call PDB_write; // iniDB_write
