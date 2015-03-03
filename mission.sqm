@@ -49,7 +49,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=47;
+		items=49;
 		class Item0
 		{
 			side="WEST";
@@ -1899,6 +1899,48 @@ class Mission
 				};
 			};
 		};
+		class Item47
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4795.91,8.7,2588.24};
+					azimut=332.3353;
+					id=154;
+					side="LOGIC";
+					vehicle="C_man_1_1_F";
+					leader=1;
+					skill=0.60000002;
+					text="VehStore1";
+					init="[this] spawn A3W_fnc_setupStoreNPC";
+					description="DO NOT MODIFY IN EDITOR";
+				};
+			};
+		};
+		class Item48
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8396.05,360.414,6676.43};
+					azimut=332.3353;
+					id=154;
+					side="LOGIC";
+					vehicle="C_man_1_1_F";
+					leader=1;
+					skill=0.60000002;
+					text="VehStore3";
+					init="[this] spawn A3W_fnc_setupStoreNPC";
+					description="DO NOT MODIFY IN EDITOR";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -2886,7 +2928,7 @@ class Mission
 		};
 		{
 		class Item102
-			position[]={fixtheseforbalota};
+			position[]={4769,9.5,2535};
 			name="VehStore1_landSpawn";
 			type="Empty";
 			colorName="ColorBlack";
@@ -2894,7 +2936,7 @@ class Mission
 		};
 		class Item103
 		{
-			position[]={fixtheseforbalota};
+			position[]={4725,9.5,2551};
 			name="VehStore1_heliSpawn";
 			type="Empty";
 			colorName="ColorBlack";
@@ -2902,14 +2944,14 @@ class Mission
 		};
 		class Item104
 		{
-			position[]={fixtheseforbalota};
+			position[]={4712,10,2516};
 			name="VehStore1_planeSpawn";
 			type="Empty";
 			colorName="ColorBlack";
 			angle=-27.134336;
 				{
 		class Item105
-			position[]={fixtheseforgorka};
+			position[]={8416,360.5,6685};
 			name="VehStore3_landSpawn";
 			type="Empty";
 			colorName="ColorBlack";
@@ -2917,7 +2959,7 @@ class Mission
 		};
 		class Item106
 		{
-			position[]={fixtheseforgorka};
+			position[]={8346.19,360,6689.51};
 			name="VehStore3_heliSpawn";
 			type="Empty";
 			colorName="ColorBlack";
