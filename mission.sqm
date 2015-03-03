@@ -2925,9 +2925,9 @@ class Mission
 			name="Town_27";
 			type="Empty";
 			colorName="ColorRed";
-		};
-		{
+		};	
 		class Item102
+		{
 			position[]={4769,9.5,2535};
 			name="VehStore1_landSpawn";
 			type="Empty";
