@@ -2044,59 +2044,60 @@ class Mission
 		class Item12
 		{
 			position[]={10079.86,244.99182,5438.8574};
-			id=167;
-			side="EMPTY";
-			vehicle="O_Truck_03_ammo_F";
-			leader=1;
-			lock="LOCKED";
-			skill=0.60000002;
-			init="this call A3W_fnc_setupResupplyTruck";
-			description="Service";
-		};
-		class Item13
-		{
+                        azimut=823.4754;
+ 			id=167;
+			 side="EMPTY";
+			 vehicle="O_Truck_03_ammo_F";
+ 			leader=1;
+			 lock="LOCKED";
+ 			skill=0.60000002;
+ 			init="this call A3W_fnc_setupResupplyTruck";
+			 description="Service";
+ 		};
+		 class Item13
+ 		{
 			position[]={4806.6621,338.99435,10227.582};
 			azimut=-29.133097;
-			id=168;
-			side="EMPTY";
+ 			id=168;
+ 			side="EMPTY";
 			vehicle="O_Truck_03_ammo_F";
-			leader=1;
-			lock="LOCKED";
+ 			leader=1;
+ 			lock="LOCKED";
 			skill=0.60000002;
 			init="this call A3W_fnc_setupResupplyTruck";
 			description="Service";
-		};
-		class Item14
-		{
+		 };
+ 		class Item14
+		 {
 			position[]={12110.286,159,12645.039};
-			azimut=-95.362686;
-			id=169;
+ 			azimut=-95.362686;
+ 			id=169;
 			side="EMPTY";
 			vehicle="O_Truck_03_ammo_F";
 			leader=1;
 			lock="LOCKED";
-			skill=0.60000002;
+                        skill=0.60000002;
 			init="this call A3W_fnc_setupResupplyTruck";
-			description="Service";
+ 			description="Service";
 		};
-		class Item15
+		 class Item15
 		{
-			position[]={87684,201,11808};
+			position[]={8768.4,201.861,11808.4};
                         azimut=-63.931587;
 			id=170;
 			side="EMPTY";
- 			vehicle="B_Truck_01_box_F";
- 			leader=1;
+  			vehicle="B_Truck_01_box_F";
+  			leader=1;
  			lock="LOCKED";
-			 skill=0.60000002;
+			skill=0.60000002;
  			init="this call A3W_fnc_setupSellTruck";
- 			description="Sell Vehicle";
- 		};		
+  			description="Sell Vehicle";
+  		};		
                 class Item16
-		{
-			position[]={2575.82,292.512,6285.95};
-			azimut=-63.931587; 
-			id=171;
+ 		{
+			 position[]={2575.82,292.512,6285.95};
+			 azimut=-63.931587; 
+ 			id=171;
 			side="EMPTY";
 		        vehicle="B_Truck_01_box_F";
 			leader=1;
@@ -2107,7 +2108,7 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={1699.42,16.6268.2324.18};
+			position[]={1699.42,16.6268,2324.18};
  			azimut=-63.931587;
                         id=172;
 			side="EMPTY";
@@ -2120,7 +2121,7 @@ class Mission
 		};
 		class Item18
 		{
-			position[]={5801.83,127.33,4817.85};
+ 			position[]={5801.83,127.33,4817.85};
 			azimut=-63.931587;
  			id=173;
 			side="EMPTY";
@@ -2142,7 +2143,7 @@ class Mission
 			lock="LOCKED";
 			skill=0.60000002;
 			init="this call A3W_fnc_setupSellTruck";
-			 description="Sell Vehicle";
+			description="Sell Vehicle";
 		};
 		class Item20
 		{
