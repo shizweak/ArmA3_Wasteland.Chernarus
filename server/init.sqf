@@ -10,7 +10,7 @@
 
 if (!isServer) exitWith {};
 
-externalConfigFolder = "\A3Wasteland_settings";
+externalConfigFolder = "\ChernarusReboot\A3Wasteland_settings";
 
 vChecksum = compileFinal str call A3W_fnc_generateKey;
 
