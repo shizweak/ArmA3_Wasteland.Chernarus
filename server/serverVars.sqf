@@ -419,15 +419,17 @@ randomCargoWeapons = [
 
 // LAUNCHER
   [["rhs_weap_igla", 2, 2, 0], ["box_east_explosive"]],                                 // 9K38 Igla AA
-  [["rhs_weap_rpg26", 2, 2, 0], ["box_east_explosive"]],                                // RPG-26
+  [["rhs_weap_rpg26", 1, 2, 0], ["box_east_explosive"]],                                // RPG-26
   [["rhs_weap_rpg7", 2, 2, 0], ["box_east_explosive"]],                                 // RPG-7
-  [["rhs_weap_rshg2", 2, 2, 0], ["box_east_explosive"]],                                // RShG-2
+  [["rhs_weap_rshg2", 1, 2, 0], ["box_east_explosive"]],                                // RShG-2
+  [["launch_RPG32_F", 2, 0, 0], ["box_east_explosive"]],                                // RPG-42 Alamut
 
   [["rhs_weap_fgm148", 2, 2, 0], ["box_west_explosive"]],                               // FGM-148 Javelin
   [["rhs_weap_fim92", 2, 2, 0], ["box_west_explosive"]],                                // FIM-92F
-  [["rhs_weap_M136", 2, 2, 0], ["box_west_explosive"]],                                 // M136 (HEAT)
-  [["rhs_weap_M136_hedp", 2, 2, 0], ["box_west_explosive"]],                            // M136 (HEDP)
-  [["rhs_weap_M136_hp", 2, 2, 0], ["box_west_explosive"]]                               // M136 (HP)
+  [["rhs_weap_M136", 1, 2, 0], ["box_west_explosive"]],                                 // M136 (HEAT)
+  [["rhs_weap_M136_hedp", 1, 2, 0], ["box_west_explosive"]],                            // M136 (HEDP)
+  [["rhs_weap_M136_hp", 1, 2, 0], ["box_west_explosive"]],                              // M136 (HP)
+  [["launch_NLAW_F", 2, 0, 0], ["box_west_explosive"]]                                  // PCML
 ];
 
 // Each item is an array containg an item class, followed by
