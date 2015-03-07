@@ -7,6 +7,8 @@
 //@file Created: 20/11/2012 05:19
 //@file Description: The client init.
 
+private ["_vehicleAcceleration", "_baseMoney"];
+
 if (isDedicated) exitWith {};
 
 if (!isServer) then
@@ -168,3 +170,8 @@ if (["A3W_disableArtilleryComputer"] call isConfigOn) then
 {
   enableEngineArtillery false;
 };
+
+_vehicleAcceleration = ["A3W_vehicleAcceleration", 0] call getPublicVar;
+if (_vehicleAcceleration > 0) then {
+	[_vehicleAcceleration] execVM "addons\turbo\init.sqf";
+}
