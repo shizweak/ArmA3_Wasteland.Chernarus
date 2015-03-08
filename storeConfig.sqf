@@ -1572,11 +1572,11 @@ planesArray = compileFinal str
 
 
 //AFRF
-  ["Su-25SM Grey", "RHS_Su25SM_vvs", 110000, "vehicle"],
-  ["Su-25SM Camo", "RHS_Su25SM_vvsc", 110000, "vehicle"],
+//  ["Su-25SM Grey", "RHS_Su25SM_vvs", 110000, "vehicle"],
+//  ["Su-25SM Camo", "RHS_Su25SM_vvsc", 110000, "vehicle"],
 
 //USAF
-  ["A-10A Thunderbolt II", "rhs_a10", 110000, "vehicle"]
+//  ["A-10A Thunderbolt II", "rhs_a10", 110000, "vehicle"]
 
 /*
   ["A-143 Buzzard AA", "I_Plane_Fighter_03_AA_F", 120000, "vehicle"],
