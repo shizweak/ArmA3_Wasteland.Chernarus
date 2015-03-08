@@ -1,54 +1,64 @@
-private ["_boost"];
-_boost = [_this, 0, 0] call BIS_fnc_param;
+private ["_fnTurbo", "_onKeyDown"];
 
-if (isNull player || _boost <= 0) exitwith {} ;
+if (isNull player) exitwith {} ;
 
-fn_boost =
-{
-	private ["_veh", "_speed", "_velXM", "_velYM", "_dir", "_velX", "_velY", "_velZ"];
-	_veh = vehicle player;
-	_speed = speed _veh;
-	_velXM = velocityModelSpace _veh select 0;
-	_velYM = velocityModelSpace _veh select 1;
-	if(_speed <= 1 || _speed >= 180 || _velXM > _velYM) exitWith {};
-	_dir = direction _veh;
-	_velX = velocity _veh select 0;
-	_velY = velocity _veh select 1;
-	_velZ = velocity _veh select 2;
-	_veh setVelocity [(((sin(_dir)) * _boost) + _velX),(((cos(_dir)) * _boost) + _velY),_velZ];
-};
+_onKeyDown = {
 
-onKeyDown = {
-	private ["_r","_key_delay"];
+  private [
+    "_boost",
+    "_r",
+    "_key_delay",
+    "_veh",
+    "_speed",
+    "_velXM",
+    "_velYM",
+    "_dir",
+    "_velX",
+    "_velY",
+    "_velZ"
+  ];
 
-  _key_delay  = 0.01;// MAX TIME BETWEEN KEY PRESSES
-  // player setvariable ["key",false];// ENABLE THIS LINE FOR SINGLE KEYPRESS BY REMOVING
   _r = false;
+  _key_delay  = 1;
 
-	if (player getvariable["key",true] && (_this select 1)  == 46) exitwith {
-		player setvariable["key",false];
+  if((_this select 1) != 42) exitWith { _r };
 
-		[_key_delay] spawn {
-			sleep (_this select 0);
-			player setvariable["key", true];
-		};
+  _veh = vehicle player;
 
-		_r
-	};
+  if(_veh == player) exitWith { _r };
+  if(driver _veh != player) exitWith { _r };
+  if(!(_veh isKindOf "LandVehicle")) exitWith { _r };
 
-	if ((_this select 1)  == 42 && speed player > 1) then {
-		if(vehicle player != player &&
-			vehicle player isKindOf "LandVehicle" &&
-			isTouchingGround vehicle player &&
-			driver vehicle player == player) then {
-			call fn_Turbo;
-		};
+  _speed = speed _veh;
 
-  	_r = true;
+  if(_speed <= 1 || _speed >= 85) exitWith { _r };
+  if(player getVariable["turboDelay", false]) exitWith { _r };
+
+  _boost = ["A3W_vehicleAcceleration", 0] call getPublicVar;
+  if(_boost <= 0) exitWith { _r };
+
+  _velXM = velocityModelSpace _veh select 0;
+  _velYM = velocityModelSpace _veh select 1;
+
+  if(_velXM > _velYM) exitWith { _r };
+
+  _r = true;
+  _dir = direction _veh;
+  _velX = velocity _veh select 0;
+  _velY = velocity _veh select 1;
+  _velZ = velocity _veh select 2;
+
+  _veh setVelocity [(((sin(_dir)) * _boost) + _velX),(((cos(_dir)) * _boost) + _velY),_velZ];
+
+  player setVariable["turboDelay", true];
+
+  [_key_delay] spawn {
+    sleep (_this select 0);
+    player setVariable["turboDelay", false];
   };
 
   _r;
 };
 
-waituntil {!(IsNull (findDisplay 46))};
-(FindDisplay 46) displayAddEventHandler ["keydown","_this call onKeyDown"];  
+waitUntil {!isNull findDisplay 46};
+findDisplay 46 displayAddEventHandler ["KeyDown", _onKeyDown];
