@@ -21,6 +21,7 @@ _veh = createVehicle [_class, _pos, [], 0, _special];
 
 [_veh] call vehicleSetup;
 
+_veh setDir markerDir _missionLocation;
 _veh setPosATL [_pos select 0, _pos select 1, 0.1];
 _veh setVelocity [0,0,0.01];
 

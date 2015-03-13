@@ -418,7 +418,7 @@ ammoArray = compileFinal str
 	["7.62x51mm Mixed 50Rnd", "hlc_50rnd_762x51_M_G3", 100],
 	["5.56x45mm Ball", "hlc_30rnd_556x45_b_HK33", 30],
 	["5.56x45mm Tracer", "hlc_30rnd_556x45_t_HK33", 25],
-	["5.565mm EPR", "hlc_30rnd_556x45_epr_HK33", 30],
+	["5.56x45mm EPR", "hlc_30rnd_556x45_epr_HK33", 30],
 	["5.56x45mm SOST", "hlc_30rnd_556x45_sost_HK33", 30],
 	["7.62x51mm Ball", "hlc_20Rnd_762x51_B_M14", 30],
 	["7.62x51mm Tracer", "hlc_20rnd_762x51_T_M14", 25],
@@ -452,10 +452,10 @@ ammoArray = compileFinal str
 
 	["9M39 lgla", "rhs_mag_9k38_rocket", 650],
 	["RPG-26 rocket", "rhs_rpg26_mag", 550],
-	["PG-7VL RPG-7V2", "rhs_rpg7_PG7VL_mag", 550],
-	["PG-7VR RPG-7V2", "rhs_rpg7_PG7VR_mag", 550],
-	["OG-7V RPG-7V2", "rhs_rpg7_OG7V_mag", 550],  
-	["TBG-7V RPG-7V2", "rhs_rpg7_TBG7V_mag", 550], 
+	["PG-7VL (HEAT)", "rhs_rpg7_PG7VL_mag", 550],
+	["PG-7VR (Tandem)", "rhs_rpg7_PG7VR_mag", 550],
+	["OG-7V (HE)", "rhs_rpg7_OG7V_mag", 550],  
+	["TBG-7V (Thermobaric)", "rhs_rpg7_TBG7V_mag", 550], 
 	["RShG-2", "rhs_rshg2_mag", 550],
 	["HEAT missile", "rhs_fgm148_magazine_AT", 850],  //5k
 	["Stinger missile", "rhs_fim92_mag", 650],   
@@ -1179,63 +1179,27 @@ landArray = compileFinal str
 
 //AFRF
 	["Kamaz-63968 VDV", "rhs_typhoon_vdv", 800, "vehicle"],
-
-		//======== in for testing (maybe radar placement)=========
-		//["Kung Truck Shelter", "rhs_typhoon_vdv", 600, "vehicle"],
-		//["P-37 Radar", "rhs_p37", 600, "vehicle"],
-		//["PRV-13 Radar", "rhs_prv13", 600, "vehicle"],
-		//=============================================================
-
-		// Bugged - research required
-		//["UAZ-469", "rhs_uaz_XX", 600, "vehicle"],
-		//["URAL-4320", "rhs_ural_XX", 600, "vehicle"],
-		//["URAL-4320 (Open)", "rhs_ural_open_XX", 600, "vehicle"],
-		//["URAL-4320 (Fuel)", "RHS_Ural_Fuel_XX_01", 600, "vehicle"],
-		// Bugged - research required
+	["GAZ-233011 Tigr MSV", "rhs_tigr_msv", 4000, "vehicle"],
+	["GAZ-233011 Tigr VDV", "rhs_tigr_vdv", 4000, "vehicle"],
+	["GAZ-66 MSV", "rhs_gaz66_msv", 4000, "vehicle"],
+	["GAZ-66 (Open) MSV", "rhs_gaz66o_msv", 4000, "vehicle"],
+	["GAZ-66 (R-142N) MSV", "rhs_gaz66_r142_msv", 4000, "vehicle"],
+	["GAZ-66 (AP-2) MSV", "rhs_gaz66_ap2_msv", 4000, "vehicle"],
+	["GAZ-66 (ESB-8IM) MSV", "rhs_gaz66_repair_msv", 12500, "vehicle"],
 
 //USAF
-		// Bugged - research required
-		//["M1083A1P2 Wood", "rhsusf_M1083A1P2_wd_fmtv_usarmy", 600, "vehicle"],
-		//["M1083A1P2 Desert", "rhsusf_M1083A1P2_d_fmtv_usarmy", 600, "vehicle"],
-		//["M1083A1P2-B Wood", "rhsusf_M1083A1P2_B_wd_fmtv_usarmy", 600, "vehicle"],
-		//["M1083A1P2-B Desert", "rhsusf_M1083A1P2_B_d_fmtv_usarmy", 600, "vehicle"],
-		//["M109A6 Paladin Wood", "rhsusf_m109_usarmy", 600, "vehicle"],
-		//["M109A6 Paladin Desert", "rhsusf_m109d_usarmy", 600, "vehicle"],
-		// Bugged - research required
-
-		//W.I.P
-		//["M997A2", "rhsusf_M977A2_usarmy_wd", 600, "vehicle"],
-		//["M997A2 (CPK)", "rhsusf_M977A2_CPK_usarmy_wd", 600, "vehicle"],
-		//W.I.P
 	["M998A2", "rhsusf_M977A2_usarmy_wd", 800, "vehicle"],
 	["M998A2 (CPK)", "rhsusf_M977A2_CPK_usarmy_wd", 800, "vehicle"],
-
-	["M998, 2dr cgo/trp carr, open", "rhsusf_m998_w_2dr", 800, "vehicle"],
-	["M998, 2dr cgo/trp carr, open", "rhsusf_m998_d_2dr", 800, "vehicle"],
 	["M998, 2dr cgo/trp carr, open w/ snorkel", "rhsusf_m998_w_s_2dr", 800, "vehicle"],
-	["M998, 2dr cgo/trp carr, open w/ snorkel", "rhsusf_m998_d_s_2dr", 800, "vehicle"],
-	["M998, 2dr cgo/trp carr, halfsoftop", "rhsusf_m998_w_2dr_halftop", 800, "vehicle"],
-	["M998, 2dr cgo/trp carr, halfsoftop", "rhsusf_m998_d_2dr_halftop", 800, "vehicle"],
 	["M998, 2dr cgo/trp carr, halfsoftop w/ snorkel	", "rhsusf_m998_w_s_2dr_halftop", 800, "vehicle"],
-	["M998, 2dr cgo/trp carr, halfsoftop w/ snorkel	", "rhsusf_m998_d_s_2dr_halftop", 800, "vehicle"],
-	["M998, 2dr cgo/trp carr, softop", "rhsusf_m998_w_2dr_fulltop", 800, "vehicle"],
-	["M998, 2dr cgo/trp carr, softop", "rhsusf_m998_d_2dr_fulltop", 800, "vehicle"],
 	["M998, 2dr cgo/trp carr, softop w/ snorkel", "rhsusf_m998_w_s_2dr_fulltop", 800, "vehicle"],
-	["M998, 2dr cgo/trp carr, softop w/ snorkel", "rhsusf_m998_d_s_2dr_fulltop", 800, "vehicle"],
-
-	["M998, 4dr cgo/trp carr, open", "rhsusf_m998_w_4dr", 800, "vehicle"],
-	["M998, 4dr cgo/trp carr, open", "rhsusf_m998_d_4dr", 800, "vehicle"],
 	["M998, 4dr cgo/trp carr, open w/ snorkel", "rhsusf_m998_w_s_4dr", 800, "vehicle"],
-	["M998, 4dr cgo/trp carr, open w/ snorkel", "rhsusf_m998_d_s_4dr", 800, "vehicle"],
-	["M998, 4dr cgo/trp carr, halfsoftop", "rhsusf_m998_w_4dr_halftop", 800, "vehicle"],
-	["M998, 4dr cgo/trp carr, halfsoftop", "rhsusf_m998_d_4dr_halftop", 800, "vehicle"],
 	["M998, 4dr cgo/trp carr, halfsoftop w/ snorkel", "rhsusf_m998_w_s_4dr_halftop", 800, "vehicle"],
-	["M998, 4dr cgo/trp carr, halfsoftop w/ snorkel", "rhsusf_m998_d_s_4dr_halftop", 800, "vehicle"],
-	["M998, 4dr cgo/trp carr, softop", "rhsusf_m998_w_4dr_fulltop", 800, "vehicle"],
-	["M998, 4dr cgo/trp carr, softop", "rhsusf_m998_d_4dr_fulltop", 800, "vehicle"],
 	["M998, 4dr cgo/trp carr, softop w/ snorkel", "rhsusf_m998_w_s_4dr_fulltop", 800, "vehicle"],
-	["M998, 4dr cgo/trp carr, softop w/ snorkel", "rhsusf_m998_d_s_4dr_fulltop", 800, "vehicle"]
-
+	["M1025 (Unarmed/Snorkel)W", "rhsusf_m1025_w_s", 4000, "vehicle"],
+	["M1025 (M2/Snorkel)W", "rhsusf_m1025_w_s_m2", 8000, "vehicle"],
+	["M1025 (Mk19/Snorkel)W", "rhsusf_m1025_w_s_mk19", 10000, "vehicle"],
+	["Offroad HMG", "B_G_Offroad_01_armed_F", 2500, "vehicle"]
 
 /*
 	["Kart", "C_Kart_01_F", 500, "vehicle"],
@@ -1250,7 +1214,6 @@ landArray = compileFinal str
 	["Offroad", "C_Offroad_01_F", 1100, "vehicle"],
 	["Offroad Camo", "B_G_Offroad_01_F", 1250, "vehicle"],
 	["Offroad Repair", "C_Offroad_01_repair_F", 1500, "vehicle"],
-	["Offroad HMG", "B_G_Offroad_01_armed_F", 2500, "vehicle"],
 	["Truck", "C_Van_01_transport_F", 700, "vehicle"],
 	["Truck (Camo)", "B_G_Van_01_transport_F", 800, "vehicle"],
 	["Truck Box", "C_Van_01_box_F", 900, "vehicle"],
@@ -1295,115 +1258,27 @@ armoredArray = compileFinal str
 
 //AFRF
 	["BMD-1 Combat", "rhs_bmd1", 35000, "vehicle"],
-	["BMD-1k Command", "rhs_bmd1k", 32500, "vehicle"],
 	["BMD-1p Combat", "rhs_bmd1p", 35000, "vehicle"],
-	["BMD-1pk Command", "rhs_bmd1pk", 35000, "vehicle"],
 	["BMD-1R Rocket", "rhs_bmd1r", 32500, "vehicle"],
 	["BMD-2", "rhs_bmd2", 37500, "vehicle"],
-	["BMD-2K Command", "rhs_bmd2k", 37500, "vehicle"],
 	["BMD-2M Modern", "rhs_bmd2m", 37500, "vehicle"],
-	["BDM-4", "rhs_bmd4_vdv", 40000, "vehicle"],
-	["BDM-4M", "rhs_bmd4m_vdv", 40000, "vehicle"],
-	["BDM-4M(A)", "rhs_bmd4ma_vdv", 40000, "vehicle"],
-		//["BMP-1", "rhs_bmp1_XX", 10000, "vehicle"],
-		//["BMP-1P Improved", "rhs_bmp1p_XX", 10000, "vehicle"],
-		//["BMP-1K Command", "rhs_bmp1k_XX", 10000, "vehicle"],
-		// MISSING["BMP-1D UpArmoured", "", 10000, "vehicle"],
-	["BMP-2 (E)	 Export", "rhs_bmp2e_XX", 40000, "vehicle"],
-	["BMP-2", "rhs_bmp2_XX", 40000, "vehicle"],
-	["BMP-2K Command", "rhs_bmp2k_XX", 40000, "vehicle"],
-	["BMP-2D UpArmoured", "rhs_bmp2d_XX", 40000, "vehicle"],
-	
-		//Marked as W.I.P -uncomment to test
-		//["BMP-3", "rhs_bmp3_msv", 400, "vehicle"],
-		//["BMP-3M", "rhs_bmp3m_msv", 400, "vehicle"],
-		//["BMP-3M (A)", "rhs_bmp3mera_msv", 400, "vehicle"],
-		//Marked as W.I.P -uncomment to test
-
-
-	["BRM-1K MSV", "rhs_brm1k_msv", 22500, "vehicle"],
+	["BMD-4", "rhs_bmd4_vdv", 40000, "vehicle"],
+	["BMD-4M", "rhs_bmd4m_vdv", 40000, "vehicle"],
+	["BMD-4M(A)", "rhs_bmd4ma_vdv", 40000, "vehicle"],
 	["BRM-1K TV", "rhs_brm1k_tv", 22500, "vehicle"],
-	["BRM-1K VDV", "rhs_brm1k_vdv", 22500, "vehicle"],
-	["BRM-1K VV", "rhs_brm1k_vv", 22500, "vehicle"],
-	["BTR-60 APC MSV", "rhs_btr60_msv", 22500, "vehicle"],
 	["BTR-60 APC VDV", "rhs_btr60_vdv", 22500, "vehicle"],
-	["BTR-60 APC VMF", "rhs_btr60_vmf", 22500, "vehicle"],
-	["BTR-60 APC VV", "rhs_btr60_vv", 22500, "vehicle"],
-	["BTR-70 APC MSV", "rhs_btr70_msv", 22500, "vehicle"],
 	["BTR-70 APC VDV", "rhs_btr70_vdv", 22500, "vehicle"],
-	["BTR-70 APC VMF", "rhs_btr70_vmf", 22500, "vehicle"],
-	["BTR-70 APC VV", "rhs_btr70_vv", 22500, "vehicle"],
-	["BTR-80 APC MSV", "rhs_btr80_msv", 24000, "vehicle"],
 	["BTR-80 APC VDV", "rhs_btr80_vdv", 24000, "vehicle"],
-	["BTR-80 APC VMF", "rhs_btr80_vmf", 24000, "vehicle"],
-	["BTR-80 APC VV", "rhs_btr80_vv", 24000, "vehicle"],
-	["BTR-80A APC MSV", "rhs_btr80a_msv", 24000, "vehicle"],
 	["BTR-80A APC VDV", "rhs_btr80a_vdv", 24000, "vehicle"],
-	["BTR-80A APC VMF", "rhs_btr80a_vmf", 24000, "vehicle"],
-	["BTR-80A APC VV", "rhs_btr80a_vv", 24000, "vehicle"],
-	["GAZ-233011 Tigr MSV", "rhs_tigr_msv", 4000, "vehicle"],
-	["GAZ-233011 Tigr VDV", "rhs_tigr_vdv", 4000, "vehicle"],
-	["GAZ-233011 Tigr VMF", "rhs_tigr_vmf", 4000, "vehicle"],
-	["GAZ-233011 Tigr VV", "rhs_tigr_vv", 4000, "vehicle"],
-	["GAZ-66 MSV", "rhs_gaz66_msv", 4000, "vehicle"],
-	["GAZ-66 VDV", "rhs_gaz66_vdv", 4000, "vehicle"],
-	["GAZ-66 VMF", "rhs_gaz66_vmf", 4000, "vehicle"],
-	["GAZ-66 VV", "rhs_gaz66_vv", 4000, "vehicle"],
-	["GAZ-66 (Open) MSV", "rhs_gaz66o_msv", 4000, "vehicle"],
-	["GAZ-66 (Open) VDV", "rhs_gaz66o_vdv", 4000, "vehicle"],
-	["GAZ-66 (Open) VMF", "rhs_gaz66o_vmf", 4000, "vehicle"],
-	["GAZ-66 (Open) VV", "rhs_gaz66o_vv", 4000, "vehicle"],
-	["GAZ-66 (R-142N) MSV", "rhs_gaz66_r142_msv", 4000, "vehicle"],
-	["GAZ-66 (R-142N) VDV", "rhs_gaz66_r142_vdv", 4000, "vehicle"],
-	["GAZ-66 (R-142N) VMF", "rhs_gaz66_r142_vmf", 4000, "vehicle"],
-	["GAZ-66 (R-142N) VV", "rhs_gaz66_r142_vv", 4000, "vehicle"],
-	["GAZ-66 (AP-2) MSV", "rhs_gaz66_ap2_msv", 4000, "vehicle"],
-	["GAZ-66 (AP-2) VDV", "rhs_gaz66_ap2_vdv", 4000, "vehicle"],
-	["GAZ-66 (AP-2) VMF", "rhs_gaz66_ap2_vmf", 4000, "vehicle"],
-	["GAZ-66 (AP-2) VV", "rhs_gaz66_ap2_vv", 4000, "vehicle"],
-	["GAZ-66 (ESB-8IM) MSV", "rhs_gaz66_repair_msv", 12500, "vehicle"],
-	["GAZ-66 (ESB-8IM) VDV", "rhs_gaz66_repair_vdv", 12500, "vehicle"],
-	["GAZ-66 (ESB-8IM) VMF", "rhs_gaz66_repair_vmf", 12500, "vehicle"],
-	["GAZ-66 (ESB-8IM) VV", "rhs_gaz66_repair_vv", 12500, "vehicle"],
-	["PRP-3 MSV", "rhs_prp3_msv", 15000, "vehicle"],
-	["PRP-3 TV", "rhs_prp3_tv", 15000, "vehicle"],
-	["PRP-3 VDV", "rhs_prp3_vdv", 155000, "vehicle"],
-	["PRP-3 VV", "rhs_prp3_vv", 15000, "vehicle"],
-	["ZSU-23-4 (TV)", "rhs_zsu234_aa", 22000, "vehicle"],
-
 
 //USAF
 
-	["M1025 (Unarmed) Wood", "rhsusf_m1025_w", 4000, "vehicle"],
-	["M1025 (Unarmed) Desert", "rhsusf_m1025_d", 4000, "vehicle"],
-	["M1025 (Unarmed/Snorkel)W", "rhsusf_m1025_w_s", 4000, "vehicle"],
-	["M1025 (Unarmed/Snorkel)D", "rhsusf_m1025_d_s", 4000, "vehicle"], //class name wrong online. uncomment to test
-	["M1025 (M2)W", "rhsusf_m1025_w_m2", 8000, "vehicle"],
-	["M1025 (M2)D", "rhsusf_m1025_d_m2", 8000, "vehicle"],
-	["M1025 (M2/Snorkel)W", "rhsusf_m1025_w_s_m2", 8000, "vehicle"],
-	["M1025 (M2/Snorkel)D", "rhsusf_m1025_d_s_m2", 8000, "vehicle"],
-	["M1025 (Mk19)W", "rhsusf_m1025_w_mk19", 10000, "vehicle"],
-	["M1025 (Mk19)D", "rhsusf_m1025_d_mk19", 10000, "vehicle"],
-	["M1025 (Mk19/Snorkel)W", "rhsusf_m1025_w_s_mk19", 10000, "vehicle"],
-	["M1025 (Mk19/Snorkel)D", "rhsusf_m1025_d_s_mk19", 10000, "vehicle"],
-
 	["M113A3 Wood", "rhsusf_m113_usarmy", 14000, "vehicle"],
-	["M113A3 Desert", "rhsusf_m113d_usarmy", 14000, "vehicle"],
-
 	["M2A2ODS", "RHS_M2A2_wd", 36000, "vehicle"],
-	["M2A2ODS", "RHS_M2A2", 36000, "vehicle"],
 	["M2A2ODS (BUSK I) Wood", "RHS_M2A2_BUSKI_wd", 36000, "vehicle"],
-	["M2A2ODS (BUSK I) Desert", "RHS_M2A2_BUSKI", 36000, "vehicle"],
-
 	["M2A3 Wood", "RHS_M2A3", 36000, "vehicle"],
-	["M2A3 Desert", "RHS_M2A3", 36000, "vehicle"],
 	["M2A3 (BUSK I) Wood", "RHS_M2A3_BUSKI_wd", 36000, "vehicle"],
-	["M2A3 (BUSK I) Desert", "RHS_M2A3_BUSKI", 36000, "vehicle"],
-	["M2A3 (BUSK III) Wood", "RHS_M2A3_BUSKIII_wd", 36000, "vehicle"],
-	["M2A3 (BUSK III) Desert", "RHS_M2A3_BUSKIII", 36000, "vehicle"],
-	["M6 Wood", "RHS_M6_wd", 36000, "vehicle"],
-	["M6 Desert", "RHS_M6", 36000, "vehicle"]
-
+	["M2A3 (BUSK III) Wood", "RHS_M2A3_BUSKIII_wd", 36000, "vehicle"]	
 
 /*
 	["Hunter", "B_MRAP_01_F", 4000, "vehicle"],
@@ -1424,49 +1299,38 @@ armoredArray = compileFinal str
 
 tanksArray = compileFinal str
 [
-
+	["ZSU-39 Tigris AA", "O_APC_Tracked_02_AA_F", 40000, "vehicle"],
+	["ZSU-23-4 (TV)", "rhs_zsu234_aa", 22000, "vehicle"],
+	["M6 Wood", "RHS_M6_wd", 36000, "vehicle"]
+	
 //AFRF
-
-		//Rocket launcher bullshit 
-		//["BM-21 122mm RL MSV", "RHS_BM21_MSV_01", 10000, "vehicle"],
-		//["BM-21 122mm RL VDV", "RHS_BM21_VDV_01", 10000, "vehicle"],
-		//["BM-21 122mm RL VMF", "RHS_BM21_VMF_01", 10000, "vehicle"],
-		//["BM-21 122mm RL VV", "RHS_BM21_VV_01", 10000, "vehicle"],
-
-	["2S25(VDV)", "rhs_sprut_vdv", 45000, "vehicle"],
-		//["2S3M", "rhs_2s3_tv", 400, "vehicle"],
-		//["PRP-3", "rhs_prp3_msv", 400, "vehicle"],
-	["T-72Ba", "rhs_t72ba_tv", 60000, "vehicle"],
-	["T-72Bb", "rhs_t72bb_tv", 60000, "vehicle"],
-	["T-72Bc", "rhs_t72bc_tv", 60000, "vehicle"],
-	["T-72B3", "rhs_t72bd_tv", 60000, "vehicle"],
-		//["T-80", "rhs_t80", 70000, "vehicle"],
-		//["T-80A", "rhs_t80a", 70000, "vehicle"],
-		//["T-80B", "rhs_t80b", 70000, "vehicle"],
-		//["T-80BK", "rhs_t80bk", 70000, "vehicle"],
-		//["T-80BV", "rhs_t80bv", 70000, "vehicle"],
-		//["T-80BVK", "rhs_t80bvk", 70000, "vehicle"],
-		//["T-80U", "rhs_t80u", 90000, "vehicle"],
+	//["2S25(VDV)", "rhs_sprut_vdv", 45000, "vehicle"],
+	//["T-72Ba", "rhs_t72ba_tv", 60000, "vehicle"],
+	//["T-72Bb", "rhs_t72bb_tv", 60000, "vehicle"],
+	//["T-72Bc", "rhs_t72bc_tv", 60000, "vehicle"],
+	//["T-72B3", "rhs_t72bd_tv", 60000, "vehicle"],
+	//["T-80", "rhs_t80", 70000, "vehicle"],
+	//["T-80A", "rhs_t80a", 70000, "vehicle"],
+	//["T-80B", "rhs_t80b", 70000, "vehicle"],
+	//["T-80BK", "rhs_t80bk", 70000, "vehicle"],
+	//["T-80BV", "rhs_t80bv", 70000, "vehicle"],
+	//["T-80BVK", "rhs_t80bvk", 70000, "vehicle"],
+	//["T-80U", "rhs_t80u", 90000, "vehicle"],
 
 //USAF
-	["M1A1AIM Wood", "rhsusf_m1a1aimwd_usarmy", 70000, "vehicle"],
-	["M1A1AIM Desert", "rhsusf_m1a1aimd_usarmy", 70000, "vehicle"],
-	["M1A1AIM TUSK I Wood", "rhsusf_m1a1aim_tuski_wd", 75000, "vehicle"],
-	["M1A1AIM TUSK I Desert", "rhsusf_m1a1aim_tuski_d", 75000, "vehicle"],
-	["M1A1FEP Wood", "rhsusf_m1a1fep_wd", 70000, "vehicle"],
-	["M1A1FEP Desert", "rhsusf_m1a1fep_d", 70000, "vehicle"],
-	["M1A2SEPv1 Wood", "rhsusf_m1a2sep1wd_usarmy", 75000, "vehicle"],
-	["M1A2SEPv1 Desert", "rhsusf_m1a2sep1d_usarmy", 75000, "vehicle"],
-	["M1A2SEPv1 (Tusk I) Wood", "rhsusf_m1a2sep1tuskiwd_usarmy", 80000, "vehicle"],
-	["M1A2SEPv1 (Tusk I) Desert", "rhsusf_m1a2sep1tuskid_usarmy", 80000, "vehicle"]
 
+	//["M1A1AIM Wood", "rhsusf_m1a1aimwd_usarmy", 70000, "vehicle"],
+	//["M1A1AIM TUSK I Wood", "rhsusf_m1a1aim_tuski_wd", 75000, "vehicle"],
+	//["M1A1FEP Wood", "rhsusf_m1a1fep_wd", 70000, "vehicle"],
+	//["M1A2SEPv1 Wood", "rhsusf_m1a2sep1wd_usarmy", 75000, "vehicle"],
+	//["M1A2SEPv1 (Tusk I) Wood", "rhsusf_m1a2sep1tuskiwd_usarmy", 80000, "vehicle"],
+	
 /*
 	["CRV-6e Bobcat", "B_APC_Tracked_01_CRV_F", 32500, "vehicle"],
 	["IFV-6c Panther", "B_APC_Tracked_01_rcws_F", 35000, "vehicle"],
 	["FV-720 Mora", "I_APC_tracked_03_cannon_F", 37500, "vehicle"],
 	["BTR-K Kamysh", "O_APC_Tracked_02_cannon_F", 40000, "vehicle"],
 	["IFV-6a Cheetah AA", "B_APC_Tracked_01_AA_F", 40000, "vehicle"],
-	["ZSU-39 Tigris AA", "O_APC_Tracked_02_AA_F", 40000, "vehicle"],
 	["M2A1 Slammer", "B_MBT_01_cannon_F", 50000, "vehicle"],
 	["M2A4 Slammer HMG", "B_MBT_01_TUSK_F", 50000, "vehicle"], // Commander gun variant
 	["T-100 Varsuk", "O_MBT_02_cannon_F", 50000, "vehicle"],
@@ -1480,47 +1344,38 @@ helicoptersArray = compileFinal str
 [
 
 //AFRF
-	["Ka52 Grey", "RHS_Ka52_vvs", 65000, "vehicle"],
-	["Ka52 Camo", "RHS_Ka52_vvsc", 65000, "vehicle"],
+	//["Ka52 Grey", "RHS_Ka52_vvs", 65000, "vehicle"],
+	//["Ka52 Camo", "RHS_Ka52_vvsc", 65000, "vehicle"],
 	["Ka-60 Grey", "rhs_ka60_grey", 7000, "vehicle"],
 	["Ka-60 Camo", "rhs_ka60_c", 7000, "vehicle"],
 
 	//110k
-	["Mi-24P VDV", "RHS_Mi24P_vdv", 70000, "vehicle"],
-	["Mi-24V VDV", "RHS_Mi24V_vdv", 80000, "vehicle"],
-	["Mi-24P Grey", "RHS_Mi24P_vvs", 70000, "vehicle"],
-	["Mi-24V Grey", "RHS_Mi24V_vvs", 80000, "vehicle"],
-	["Mi-24P Camo", "RHS_Mi24P_vvsc", 70000, "vehicle"],
-	["Mi-24V Camo", "RHS_Mi24V_vvsc", 80000, "vehicle"],  
+	//["Mi-24P VDV", "RHS_Mi24P_vdv", 70000, "vehicle"],
+	//["Mi-24V VDV", "RHS_Mi24V_vdv", 80000, "vehicle"],
+	//["Mi-24P Grey", "RHS_Mi24P_vvs", 70000, "vehicle"],
+	//["Mi-24V Grey", "RHS_Mi24V_vvs", 80000, "vehicle"],
+	//["Mi-24P Camo", "RHS_Mi24P_vvsc", 70000, "vehicle"],
+	//["Mi-24V Camo", "RHS_Mi24V_vvsc", 80000, "vehicle"],  
 
-	//110k
-	["Mi-8AMTSh VDV", "RHS_Mi8AMTSh_vdv", 75000, "vehicle"],
 	["Mi-8AMTSh Grey", "RHS_Mi8AMTSh_vvs", 75000, "vehicle"],
 	["Mi-8AMTSh Camo", "RHS_Mi8AMTSh_vvsc", 75000, "vehicle"],
-
 	["Mi-8MT VDV", "RHS_Mi8mt_vdv", 10000, "vehicle"],
 	["Mi-8MT VV", "RHS_Mi8mt_vv", 10000, "vehicle"],
 	["Mi-8MT Grey", "RHS_Mi8mt_vvs", 10000, "vehicle"],
 	["Mi-8MT Camo", "RHS_Mi8mt_vvsc", 10000, "vehicle"],
-
-	//110k
 	["Mi-8MTV-3 VDV", "RHS_Mi8MTV3_vdv", 55000, "vehicle"],
 	["Mi-8MTV-3 Grey", "RHS_Mi8MTV3_vvs", 55000, "vehicle"],
 	["Mi-8MTV-3 Camo", "RHS_Mi8MTV3_vvsc", 55000, "vehicle"],
 
-
 //USAF
 	//110k
-	["AH-64D Apache Wood", "rhs_ah64d_wd", 85000, "vehicle"],
-	["AH-64D Apache Desert", "rhs_ah64d", 85000, "vehicle"],
+	//["AH-64D Apache Wood", "rhs_ah64d_wd", 85000, "vehicle"],
+	//["AH-64D Apache Desert", "rhs_ah64d", 85000, "vehicle"],
 
 	["CH-47 Chinook Wood", "rhs_ch_47f", 9500, "vehicle"],
-	["CH-47 Chinook Desert", "rhs_ch_47f_light", 9500, "vehicle"],
-
 	["UH-60M Woodland", "rhs_uh60m", 8000, "vehicle"],
-	["UH-60M Desert", "rhs_uh60m_d", 8000, "vehicle"],
 	["UH-60M MEV Woodland", "rhs_uh60m_mev", 8000, "vehicle"],
-	["UH-60M MEV Desert", "rhs_uh60m_mev_d", 8000, "vehicle"]
+	["AH-9 Pawnee", "B_Heli_Light_01_armed_F", 30000, "vehicle"]
 
 /*
 	["M-900 Civilian", "C_Heli_Light_01_civil_F", 4000, "vehicle"], // MH-6, no flares
@@ -1540,7 +1395,6 @@ helicoptersArray = compileFinal str
 	["UH-80 Ghost Hawk (Black)", "B_Heli_Transport_01_F", 25000, "vehicle"], // UH-60 Stealth with 2 side miniguns
 	["UH-80 Ghost Hawk (Green)", "B_Heli_Transport_01_camo_F", 25000, "vehicle"], // UH-60 Stealth with 2 side miniguns (green camo)
 	["CH-67 Huron (Armed) [DLC]", "B_Heli_Transport_03_F", 30000, "vehicle"], // CH-47 with 2 side miniguns
-	["AH-9 Pawnee", "B_Heli_Light_01_armed_F", 30000, "vehicle"], // Armed AH-6
 	["PO-30 Orca (Armed, Black)", "O_Heli_Light_02_v2_F", 30000, "vehicle"], // Armed Ka-60 with orca paintjob
 	["PO-30 Orca (Armed, Hex)", "O_Heli_Light_02_F", 35000, "vehicle"], // Armed Ka-60
 	["WY-55 Hellcat (Armed)", "I_Heli_light_03_F", 40000, "vehicle"], // Armed AW159
@@ -1555,14 +1409,15 @@ planesArray = compileFinal str
 
 
 //AFRF
-	["Su-25SM Grey", "RHS_Su25SM_vvs", 110000, "vehicle"],
-	["Su-25SM Camo", "RHS_Su25SM_vvsc", 110000, "vehicle"],
+	//["Su-25SM Grey", "RHS_Su25SM_vvs", 110000, "vehicle"],
+	//["Su-25SM Camo", "RHS_Su25SM_vvsc", 110000, "vehicle"],
 
 //USAF
-	["A-10A Thunderbolt II", "rhs_a10", 110000, "vehicle"]
+	//["A-10A Thunderbolt II", "rhs_a10", 110000, "vehicle"]
+	
+	["A-143 Buzzard AA", "I_Plane_Fighter_03_AA_F", 80000, "vehicle"]
 
 /*
-	["A-143 Buzzard AA", "I_Plane_Fighter_03_AA_F", 120000, "vehicle"],
 	["A-143 Buzzard CAS", "I_Plane_Fighter_03_CAS_F", 120000, "vehicle"],
 	// ["A-164 Wipeout CAS", "B_Plane_CAS_01_F", 60000, "vehicle"],
 	// ["To-199 Neophron CAS", "O_Plane_CAS_02_F", 60000, "vehicle"],

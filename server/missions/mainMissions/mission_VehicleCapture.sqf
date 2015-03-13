@@ -9,7 +9,7 @@
 if (!isServer) exitwith {};
 #include "mainMissionDefines.sqf";
 
-private ["_vehicle", "_vehicleName", "_vehDeterminer"];
+private ["_vehicle", "_vehicleName", "_vehDeterminer", "_loadout"];
 
 // setupVars must be defined in the top mission file
 
@@ -141,7 +141,26 @@ _setupObjects =
 			_vehicle addMagazine ["38Rnd_80mm_rockets", 20];
 			_vehicle addmagazine ["8Rnd_LG_scalpel", 2];
 		};
-
+		//AA Buzzard
+		case (_vehicle isKindOf "I_Plane_Fighter_03_AA_F");
+		{
+			_vehicle setVehicleAmmo 0;
+			
+			_vehicle removeWeaponTurret ["missiles_ASRAAM",[-1]];
+			_vehicle addMagazine "120Rnd_CMFlare_Chaff_Magazine";
+			_vehicle addMagazine "4Rnd_GAA_missiles";
+			_vehicle addMagazine "300Rnd_20mm_shells";
+			_vehicle addMagazine "300Rnd_20mm_shells";
+		};
+		// Pawnee - Experimental
+		case (_vehicle isKindOf "B_Heli_Light_01_armed_F"):
+		{
+			_vehicle removeWeaponTurret ["m134_minigun", [-1]]; 
+			_vehicle removeWeaponTurret ["missiles_DAR", [-1]]; 
+			_vehicle addweaponturret ["Twin_Cannon_20mm",[-1]]; 
+			_vehicle addmagazine "1000Rnd_20mm_shells";
+			_vehicle addmagazine "1000Rnd_20mm_shells";
+		};
 		// All other helicopters
 		case (_vehicle isKindOf "Helicopter_Base_F"):
 		{
@@ -166,7 +185,8 @@ _setupObjects =
 	reload _vehicle;
 
 	_aiGroup = createGroup CIVILIAN;
-	[_aiGroup, _missionPos, _nbUnits] call createCustomGroup;
+	_loadout = aiLoadoutsBasic call BIS_fnc_selectRandom;
+	[_aiGroup, _missionPos, _loadout, _nbUnits] call createRandomGroup;
 
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "picture");
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "displayName");

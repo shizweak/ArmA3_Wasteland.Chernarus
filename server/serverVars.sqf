@@ -18,14 +18,19 @@ currentStaticHelis = []; // Storage for the heli marker numbers so that we don't
 //Civilian Vehicle List - Random Spawns
 civilianVehicles =
 [
-  "C_Quadbike_01_F",
   "rhs_tigr_vdv",
   "rhs_tigr_vv",
   "rhs_tigr_vmf",
   "rhs_uaz_vmf",
   "rhs_uaz_vdv",
-  "rhs_uaz_vv",
-  "rhs_uaz_msv"
+  "rhs_uaz_msv",
+  "C_SUV_01_F",
+  "C_Offroad_01_F",
+  "B_G_Offroad_01_F",
+  "C_Offroad_01_repair_F",
+  "I_Truck_02_transport_F",
+  "rhsusf_m1025_w_s",
+  "rhsusf_m998_w_s_4dr"
 ];
 
 //Light Military Vehicle List - Random Spawns
@@ -33,13 +38,13 @@ lightMilitaryVehicles =
 [
   "B_Quadbike_01_F",
   "O_Quadbike_01_F",
-  "I_Quadbike_01_F",
-  "I_G_Quadbike_01_F",
 //  "O_Truck_02_covered_F",
 //  "I_Truck_02_covered_F",
 //  "O_Truck_02_transport_F",
 //  "I_Truck_02_transport_F",
-  "rhsusf_m1025_w_s_m2"
+  "rhsusf_m1025_w_s_m2",
+  "rhsusf_m1025_w_s_mk19",
+  "B_G_Offroad_01_armed_F"
 ];
 
 //Medium Military Vehicle List - Random Spawns
@@ -52,9 +57,12 @@ mediumMilitaryVehicles =
 //  "B_MRAP_01_F",
 //  "O_MRAP_02_F",
 //  "I_MRAP_03_F"
-  "rhsusf_m1025_w_s",
-  "rhsusf_m998_w_s_4dr"
-  
+	"rhs_brm1k_tv",
+	"rhs_brm1k_msv",
+	"rhs_bmd1r",
+	"rhs_btr60_vdv",
+	"rhsusf_m113_usarmy",
+	"RHS_M2A2_wd"  
 ];
 
 //Water Vehicles - Random Spawns
@@ -146,16 +154,18 @@ staticWeaponsList =
 staticHeliList =
 [
   "B_Heli_Light_01_F",
-  "rhs_ka60_c"
+  "rhs_ka60_c",
+  "rhs_uh60m",
+  "RHS_Mi8mt_vvs"
   // don't put cargo helicopters here, it doesn't make sense to find them in towns; they spawn in the CivHeli mission
 ];
 
 //Object List - Random Planes.
 staticPlaneList =
 [
-  "B_Plane_CAS_01_F",
-  "O_Plane_CAS_02_F",
-  "I_Plane_Fighter_03_CAS_F"
+  "RHS_Su25SM_vvs",
+  "RHS_Su25SM_vvsc",
+  "rhs_a10"
 ];
 
 //Random Weapon List - Change this to what you want to spawn in cars.
@@ -413,15 +423,17 @@ randomCargoWeapons = [
 
 // LAUNCHER
   [["rhs_weap_igla", 2, 2, 0], ["box_east_explosive"]],                                 // 9K38 Igla AA
-  [["rhs_weap_rpg26", 2, 2, 0], ["box_east_explosive"]],                                // RPG-26
+  [["rhs_weap_rpg26", 1, 2, 0], ["box_east_explosive"]],                                // RPG-26
   [["rhs_weap_rpg7", 2, 2, 0], ["box_east_explosive"]],                                 // RPG-7
-  [["rhs_weap_rshg2", 2, 2, 0], ["box_east_explosive"]],                                // RShG-2
+  [["rhs_weap_rshg2", 1, 2, 0], ["box_east_explosive"]],                                // RShG-2
+  [["launch_RPG32_F", 2, 0, 0], ["box_east_explosive"]],                                // RPG-42 Alamut
 
   [["rhs_weap_fgm148", 2, 2, 0], ["box_west_explosive"]],                               // FGM-148 Javelin
   [["rhs_weap_fim92", 2, 2, 0], ["box_west_explosive"]],                                // FIM-92F
-  [["rhs_weap_M136", 2, 2, 0], ["box_west_explosive"]],                                 // M136 (HEAT)
-  [["rhs_weap_M136_hedp", 2, 2, 0], ["box_west_explosive"]],                            // M136 (HEDP)
-  [["rhs_weap_M136_hp", 2, 2, 0], ["box_west_explosive"]]                               // M136 (HP)
+  [["rhs_weap_M136", 1, 2, 0], ["box_west_explosive"]],                                 // M136 (HEAT)
+  [["rhs_weap_M136_hedp", 1, 2, 0], ["box_west_explosive"]],                            // M136 (HEDP)
+  [["rhs_weap_M136_hp", 1, 2, 0], ["box_west_explosive"]],                              // M136 (HP)
+  [["launch_NLAW_F", 2, 0, 0], ["box_west_explosive"]]                                  // PCML
 ];
 
 // Each item is an array containg an item class, followed by
@@ -450,4 +462,43 @@ randomCargoItems = [
   ["Binocular", ["box_west_basic", "box_east_basic"]],                                  // Binoculars
   ["Rangefinder", ["box_west_basic", "box_east_basic"]],                                // Rangefinder
   ["Laserdesignator", ["box_west_basic", "box_east_basic"]]                             // Laser Designator
+];
+
+
+aiRandomClasses = [
+  "C_man_1_3_F",
+  "C_man_polo_1_F",
+  "C_man_polo_2_F",
+  "C_man_polo_3_F",
+  "C_man_polo_4_F",
+  "C_man_polo_5_F",
+  "C_man_polo_6_F"
+];
+
+aiLoadoutsBasic = [
+  [
+    ["rhs_uniform_cu_ucp_patchless"],                                                                                         // Uniforms
+    ["rhsusf_iotv_ocp", "rhsusf_iotv_ocp_grenadier", "rhsusf_iotv_ocp_medic", "rhsusf_iotv_ocp_rifleman"],                    // Vests
+    ["rhsusf_ach_bare", "rhs_Booniehat_ocp", "rhsusf_patrolcap_ocp", "rhsusf_ach_helmet_m81"],                                // Headgear
+    ["rhs_weap_m16a4","rhs_weap_m16a4_grip","rhs_weap_m4_carryhandle","rhs_m4_m320"],                                         // Rifles
+    ["rhsusf_assault_eagleaiii_ocp", "rhs_weap_M136", "rhs_m136_mag"]                                                         // Backpack, Launcher, Missile
+  ],
+  [
+    ["rhs_uniform_emr_patchless"],                                                                                            // Uniforms
+    ["rhs_6b23_digi", "rhs_6b23_digi_crew", "rhs_6b23_digi_medic", "rhs_6b23_digi_rifleman"],                                 // Vests
+    ["rhs_6b27m_digi", "rhs_6b27m_digi_bala", "rhs_6b28", "rhs_6b28_ess_bala", "rhs_Booniehat_digi", "rhs_fieldcap"],         // Headgear
+    ["hlc_rifle_aks74","hlc_rifle_aks74_GL","hlc_rifle_aks74u","hlc_rifle_ak74"],                                             // Rifles
+    ["rhs_assault_umbts", "rhs_weap_rpg7", "rhs_rpg7_PG7VL_mag"]                                                              // Backpack, Launcher, Missile
+  ]
+];
+
+aiLoadoutsCrewman = [
+  [
+    ["rhs_uniform_cu_ucp_patchless"],                                                     // Uniforms
+    ["hlc_smg_mp5k_PDW", "hlc_smg_mp5a3", "hlc_smg_9mmar", "hlc_rifle_auga2para"]         // Rifles
+  ],
+  [
+    ["rhs_uniform_emr_patchless"],                                                        // Uniforms
+    ["hlc_rifle_saiga12k", "rhs_weap_ak74m_folded", "hlc_rifle_aks74u"]                   // Rifles
+  ] 
 ];

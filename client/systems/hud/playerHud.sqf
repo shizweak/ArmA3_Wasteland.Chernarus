@@ -110,8 +110,8 @@ while {true} do
 	_hudActivityTextbox = _ui displayCtrl hud_activity_textbox_idc;
 	_hudServerTextbox = _ui displayCtrl hud_server_idc;
 	
-	_serverString = format ["<t color='#A0FFFFFF'>TOP #%1 Wasteland %2 : Server</t>", call A3W_extDB_ServerID, worldName];
-	_serverString = format ["%1<br/><t color='#A0FFFFFF'>ts.toparma.com : TeamSpeak<br/>TOPARMA.COM : Website/Stats/Forum</t>",_serverString];
+	_serverString = format ["<t color='#A0FFFFFF'>Shizweak #%1 A3Wasteland %2 : Server</t>", call A3W_extDB_ServerID, worldName];
+	_serverString = format ["%1<br/><t color='#A0FFFFFF'>shizweak.es:64738 : Mumble<br/>www.shizweak.es : Website/Forum</t>",_serverString];
 	_hudServerTextbox ctrlSetStructuredText parseText _serverString;
 	_hudServerTextbox ctrlCommit 0;
 
@@ -172,7 +172,7 @@ while {true} do
 
 	if (isStreamFriendlyUIEnabled) then
 	{
-		_tempString = format ["<t color='#A0FFFFFF'>TOP A3Wasteland %1<br/>www.toparma.com</t>", getText (configFile >> "CfgWorlds" >> worldName >> "description")];
+		_tempString = format ["<t color='#A0FFFFFF'>Shizweak A3Wasteland %1<br/>www.www.shizweak.es</t>", getText (configFile >> "CfgWorlds" >> worldName >> "description")];
 		_yOffset = 0.28;
 
 		_hudVehicle ctrlSetStructuredText parseText _tempString;

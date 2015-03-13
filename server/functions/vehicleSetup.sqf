@@ -104,6 +104,7 @@ switch (true) do
 	{
 		_vehicle addMagazine "300Rnd_20mm_shells";
 		_vehicle removeWeaponTurret ["missiles_SCALPEL",[-1]];
+		_vehicle removeWeaponTurret ["missiles_ASRAAM",[-1]];
 	};
 };
 
@@ -134,6 +135,12 @@ switch (true) do
 	{
 		// Add quadbike horn to karts
 		_vehicle addWeaponTurret ["MiniCarHorn", [-1]];
+	};
+	case (_vehicle isKindOf "RHS_M6_wd"):
+	{
+		_vehicle removeWeaponTurret ["rhs_weap_stinger_Launcher",[0]]; 
+		_vehicle addmagazine "4Rnd_GAA_missiles"; 
+		_vehicle addWeaponTurret ["missiles_titan", [0]]; 
 	};
 };
 

@@ -15,6 +15,7 @@ _setupVars =
 {
 	_vehicleClass =
 	[
+/*
 	"RHS_BM21_MSV_01",
 	"RHS_BM21_VDV_01",
 	"RHS_BM21_VMF_01",
@@ -27,9 +28,6 @@ _setupVars =
 	"rhs_bmd2",
 	"rhs_bmd2k",
 	"rhs_bmd2m",
-	"rhs_bmd4_vdv",
-	"rhs_bmd4m_vdv",
-	"rhs_bmd4ma_vdv",
 	"rhs_brm1k_msv",
 	"rhs_brm1k_tv",
 	"rhs_brm1k_vdv",
@@ -46,29 +44,34 @@ _setupVars =
 	"rhs_btr80_vdv",
 	"rhs_btr80_vmf",
 	"rhs_btr80_vv",
+	"rhsusf_m113d_usarmy",
+	"RHS_M2A2",
+	"RHS_M2A2_BUSKI",
+	"RHS_M2A3_BUSKI",
+	"RHS_M2A3_BUSKIII", 
+*/
 	"rhs_btr80a_msv",
 	"rhs_btr80a_vdv",
 	"rhs_btr80a_vmf",
-	"rhs_btr80a_vv",
 	"rhsusf_m113_usarmy",
-	"rhsusf_m113d_usarmy",
 	"RHS_M2A2_wd",
-	"RHS_M2A2",
 	"RHS_M2A2_BUSKI_wd",
-	"RHS_M2A2_BUSKI",
-	"RHS_M2A3",
 	"RHS_M2A3",
 	"RHS_M2A3_BUSKI_wd",
-	"RHS_M2A3_BUSKI",
 	"RHS_M2A3_BUSKIII_wd",
-	"RHS_M2A3_BUSKIII"
+	"rhs_bmd4_vdv",
+	"rhs_bmd4m_vdv",
+	"rhs_bmd4ma_vdv",	
+	"O_APC_Tracked_02_AA_F",
+	"rhs_zsu234_aa",
+	"RHS_M6_wd"
 	] call BIS_fnc_selectRandom;
 
 	_missionType = switch (true) do
 	{
 		case ({_vehicleClass isKindOf _x} count ["B_APC_Tracked_01_AA_F", "O_APC_Tracked_02_AA_F"] > 0): { "Anti Aircraft Vehicle" };
 		case (_vehicleClass isKindOf "Tank_F"):                                                          { "Infantry Fighting Vehicle" };
-		default                                                                                          { "Armored Personnel Carrier" };
+		default                                                                                          { "Armoured Personnel Carrier" };
 	};
 
 	_locationsArray = MissionSpawnMarkers;

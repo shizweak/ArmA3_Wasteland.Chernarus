@@ -9,13 +9,30 @@
 if (!isServer) exitwith {};
 #include "mainMissionDefines.sqf";
 
-private ["_convoyVeh", "_veh1", "_veh2", "_veh3", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_box1", "_box2"];
+private [
+	"_convoyVeh",
+	"_veh1",
+	"_veh2",
+	"_veh3",
+	"_createVehicle",
+	"_vehicles",
+	"_leader",
+	"_speedMode",
+	"_waypoint",
+	"_vehicleName",
+	"_numWaypoints",
+	"_box1",
+	"_box2",
+	"_loadout"
+];
 
 _setupVars =
 {
 	_missionType = "Armed Convoy";
 	_locationsArray = LandConvoyPaths;
 };
+
+_loadout = aiLoadoutsBasic call BIS_fnc_selectRandom;
 
 _setupObjects =
 {
@@ -25,9 +42,9 @@ _setupObjects =
 	// pick the vehicles for the convoy
 	_convoyVeh =
 	[
-		["rhsusf_m1025_w_s_mk19", "rhs_ural_vmf", "rhsusf_m1025_w_s_m2"],
-		["rhsusf_m1025_w_s_mk19", "rhs_ural_vmf", "rhsusf_m1025_w_s_m2"],
-		["rhsusf_m1025_w_s_mk19", "rhs_ural_vmf", "rhsusf_m1025_w_s_m2"]
+		["rhsusf_m1025_w_s_mk19", "rhsusf_m1025_w_s_m2"],
+		["rhsusf_m1025_w_s_mk19", "rhsusf_m1025_w_s_m2"],
+		["rhsusf_m1025_w_s_mk19", "rhsusf_m1025_w_s_m2"]
 	] call BIS_fnc_selectRandom;
 
 	_veh1 = _convoyVeh select 0;
@@ -49,18 +66,18 @@ _setupObjects =
 		_vehicle setDir _direction;
 		_aiGroup addVehicle _vehicle;
 
-		_soldier = [_aiGroup, _position] call createRandomSoldier;
+		_soldier = [_aiGroup, _position, _loadout] call createRandomSoldier;
 		_soldier moveInDriver _vehicle;
 
-		_soldier = [_aiGroup, _position] call createRandomSoldier;
+		_soldier = [_aiGroup, _position, _loadout] call createRandomSoldier;
 		_soldier moveInCargo [_vehicle, 0];
 
 		if !(_type isKindOf "Truck_F") then
 		{
-			_soldier = [_aiGroup, _position] call createRandomSoldier;
+			_soldier = [_aiGroup, _position, _loadout] call createRandomSoldier;
 			_soldier moveInGunner _vehicle;
 
-			_soldier = [_aiGroup, _position] call createRandomSoldier;
+			_soldier = [_aiGroup, _position, _loadout] call createRandomSoldier;
 
 			if (_vehicle emptyPositions "commander" > 0) then
 			{
