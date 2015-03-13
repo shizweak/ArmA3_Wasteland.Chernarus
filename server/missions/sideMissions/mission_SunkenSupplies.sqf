@@ -37,6 +37,8 @@ _setupObjects =
 	[_aiGroup, _missionPos] call createSmallDivers;
 
 	_missionHintText = "Sunken supplies have been spotted in the ocean near the marker, and are heavily guarded. Diving gear and an underwater weapon are recommended.";
+
+	[_aiGroup, HC1] execVM "server\moveToHC.sqf";
 };
 
 _waitUntilMarkerPos = nil;

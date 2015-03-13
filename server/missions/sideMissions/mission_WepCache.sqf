@@ -37,6 +37,8 @@ _setupObjects =
 	[_aiGroup, _missionPos, _loadout, _nbUnits] call createRandomGroup;
 
 	_missionHintText = "A weapon cache has been spotted near the marker.";
+
+	[_aiGroup, HC1] execVM "server\moveToHC.sqf";
 };
 
 _waitUntilMarkerPos = nil;

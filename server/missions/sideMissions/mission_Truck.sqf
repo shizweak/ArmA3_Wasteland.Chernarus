@@ -50,6 +50,8 @@ _setupObjects =
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "displayName");
 
 	_missionHintText = format ["A <t color='%2'>%1</t> has been immobilized, go get it for your team.", _vehicleName, sideMissionColor];
+
+	[_aiGroup, HC1] execVM "server\moveToHC.sqf";
 };
 
 _waitUntilMarkerPos = nil;

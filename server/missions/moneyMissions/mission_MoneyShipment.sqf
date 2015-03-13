@@ -212,6 +212,8 @@ _setupObjects =
 	_missionHintText = format ["A convoy transporting <t color='%1'>%2</t> escorted by a <t color='%1'>%3</t> is en route to an unknown location.<br/>Stop them!", moneyMissionColor, _moneyText, _vehicleName];
 
 	_numWaypoints = count waypoints _aiGroup;
+
+	[_aiGroup, HC1] execVM "server\moveToHC.sqf";
 };
 
 _waitUntilMarkerPos = {getPosATL _leader};

@@ -68,13 +68,14 @@ if (isServer) then
 	[] execVM "server\init.sqf";
 };
 
-//init 3rd Party Scripts
-[] execVM "addons\vactions\functions.sqf";
-[] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
-[] execVM "addons\proving_ground\init.sqf";
-[] execVM "addons\scripts\DynamicWeatherEffects.sqf";
-[] execVM "addons\zlt_fastrope\zlt_fastrope.sqf";
-[] execVM "addons\JumpMF\init.sqf";
-[] execVM "addons\EtV\init.sqf";
-[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";
+if(isServer || hasInterface) then {
+	[] execVM "addons\vactions\functions.sqf";
+	[] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
+	[] execVM "addons\proving_ground\init.sqf";
+	[] execVM "addons\scripts\DynamicWeatherEffects.sqf";
+	[] execVM "addons\zlt_fastrope\zlt_fastrope.sqf";
+	[] execVM "addons\JumpMF\init.sqf";
+	[] execVM "addons\EtV\init.sqf";
+	[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";
+};
 

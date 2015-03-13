@@ -42,6 +42,8 @@ _setupObjects =
 
 	_missionPicture = getText (configFile >> "CfgVehicles" >> typeOf _wreck >> "picture");
 	_missionHintText = "A helicopter has come down under enemy fire!";
+
+	[_aiGroup, HC1] execVM "server\moveToHC.sqf";
 };
 
 _waitUntilMarkerPos = nil;

@@ -42,9 +42,7 @@ _setupObjects =
 	// pick the vehicles for the convoy
 	_convoyVeh =
 	[
-		["rhsusf_m1025_w_s_mk19", "rhsusf_m1025_w_s_m2"],
-		["rhsusf_m1025_w_s_mk19", "rhsusf_m1025_w_s_m2"],
-		["rhsusf_m1025_w_s_mk19", "rhsusf_m1025_w_s_m2"]
+		["rhsusf_m1025_w_s_m2", "rhsusf_m1025_w_s_mk19", "rhsusf_m1025_w_s_m2"]
 	] call BIS_fnc_selectRandom;
 
 	_veh1 = _convoyVeh select 0;
@@ -132,6 +130,8 @@ _setupObjects =
 	_missionHintText = format ["A <t color='%2'>%1</t> transporting 2 weapon crates is being escorted by armed vehicles. Stop them!", _vehicleName, mainMissionColor];
 
 	_numWaypoints = count waypoints _aiGroup;
+
+	[_aiGroup, HC1] execVM "server\moveToHC.sqf";
 };
 
 _waitUntilMarkerPos = {getPosATL _leader};

@@ -142,6 +142,10 @@ _vehicleSavingOn = (_purchasedVehicleSavingOn || _purchasedVehicleSavingOn);
 
 _setupPlayerDB = scriptNull;
 
+diag_log "Waiting for HC1!";
+waitUntil {!isNil "HC1"};
+diag_log "We've seen HC1!";
+
 // Do we need any persistence?
 if (_playerSavingOn || _objectSavingOn || _vehicleSavingOn) then
 {

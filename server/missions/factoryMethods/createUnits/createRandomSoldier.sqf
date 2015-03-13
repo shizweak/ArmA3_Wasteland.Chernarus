@@ -20,7 +20,8 @@ private [
   "_loadout",
   "_launcher",
   "_mode",
-  "_soldier"
+  "_soldier",
+  "_grenades"
 ];
 
 _group = _this select 0;
@@ -49,6 +50,18 @@ _soldier addUniform (_uniformTypes call BIS_fnc_selectRandom);
 _soldier addVest (_vestTypes call BIS_fnc_selectRandom);
 _soldier addHeadgear (_headTypes call BIS_fnc_selectRandom);
 [_soldier, _weaponTypes call BIS_fnc_selectRandom, 3] call BIS_fnc_addWeapon;
+
+_grenades = [
+  "SmokeShell",
+  "SmokeShellPurple",
+  "SmokeShellBlue",
+  "SmokeShellGreen",
+  "SmokeShellYellow",
+  "SmokeShellOrange",
+  "SmokeShellRed"
+];
+
+_soldier addItemCargo [_grenades call BIS_fnc_selectRandom, 2];
 
 if(_launcher && count _launcherSetup == 3) then {
   _soldier addBackpack (_launcherSetup select 0);

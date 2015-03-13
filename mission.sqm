@@ -1627,6 +1627,25 @@ class Mission
 		};
 		class Item35
 		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={419.09402,639.68799,15114.222};
+					id=140;
+					side="LOGIC";
+					vehicle="HeadlessClient_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="HC1";
+				};
+			};
+		};
+		class Item36
+		{
 			side="GUER";
 			class Vehicles
 			{
@@ -1634,7 +1653,7 @@ class Mission
 				class Item0
 				{
 					position[]={422.60379,637.68188,15116.429};
-					id=140;
+					id=141;
 					side="GUER";
 					vehicle="I_medic_F";
 					player="PLAY CDG";
@@ -1644,7 +1663,7 @@ class Mission
 				class Item1
 				{
 					position[]={423.84402,636.96344,15116.429};
-					id=141;
+					id=142;
 					side="GUER";
 					vehicle="I_diver_F";
 					player="PLAY CDG";
@@ -1653,7 +1672,7 @@ class Mission
 				class Item2
 				{
 					position[]={425.08524,636.24188,15116.429};
-					id=142;
+					id=143;
 					side="GUER";
 					vehicle="I_medic_F";
 					player="PLAY CDG";
@@ -1662,30 +1681,11 @@ class Mission
 				class Item3
 				{
 					position[]={426.33035,635.51782,15116.416};
-					id=143;
+					id=144;
 					side="GUER";
 					vehicle="I_engineer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-				};
-			};
-		};
-		class Item36
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={419.09402,639.68799,15114.222};
-					id=144;
-					side="LOGIC";
-					vehicle="HeadlessClient_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					text="HeadlessClient";
 				};
 			};
 		};

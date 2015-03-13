@@ -118,6 +118,8 @@ _setupObjects =
 	_missionHintText = format ["A <t color='%2'>%1</t> transporting 2 weapon crates is being escorted. Stop the convoy!", _vehicleName, sideMissionColor];
 
 	_numWaypoints = count waypoints _aiGroup;
+
+	[_aiGroup, HC1] execVM "server\moveToHC.sqf";
 };
 
 _waitUntilMarkerPos = {getPosATL _leader};

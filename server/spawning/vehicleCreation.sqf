@@ -93,3 +93,7 @@ if (_vehicleType isKindOf "Helicopter_Base_F") then
 if (_type > 1) then { _vehicle setVehicleAmmo (random 1.0) };
 
 [_vehicle] call randomVehicleWeapons;
+
+if(!isNil "HC1") then {
+	[_vehicle, HC1] execVM "server\vehicleToHC.sqf";
+};

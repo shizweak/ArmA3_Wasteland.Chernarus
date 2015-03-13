@@ -29,7 +29,10 @@ _setupObjects =
 	_loadout = aiLoadoutsBasic call BIS_fnc_selectRandom;
 	[_aiGroup, _missionPos, _loadout, _nbUnits, 5] call createRandomGroup;
 
-	_missionHintText = format ["An armed <t color='%1'>outpost</t> containing weapon crates has been spotted near the marker, go capture it!", sideMissionColor]
+
+	_missionHintText = format ["An armed <t color='%1'>outpost</t> containing weapon crates has been spotted near the marker, go capture it!", sideMissionColor];
+	
+	[_aiGroup, HC1] execVM "server\moveToHC.sqf";
 };
 
 _waitUntilMarkerPos = nil;
