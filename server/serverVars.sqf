@@ -18,19 +18,19 @@ currentStaticHelis = []; // Storage for the heli marker numbers so that we don't
 //Civilian Vehicle List - Random Spawns
 civilianVehicles =
 [
-  "C_Quadbike_01_F",
   "rhs_tigr_vdv",
   "rhs_tigr_vv",
   "rhs_tigr_vmf",
   "rhs_uaz_vmf",
   "rhs_uaz_vdv",
-  "rhs_uaz_vv",
   "rhs_uaz_msv",
   "C_SUV_01_F",
   "C_Offroad_01_F",
   "B_G_Offroad_01_F",
   "C_Offroad_01_repair_F",
-  "I_Truck_02_transport_F"
+  "I_Truck_02_transport_F",
+  "rhsusf_m1025_w_s",
+  "rhsusf_m998_w_s_4dr"
 ];
 
 //Light Military Vehicle List - Random Spawns
@@ -38,13 +38,12 @@ lightMilitaryVehicles =
 [
   "B_Quadbike_01_F",
   "O_Quadbike_01_F",
-  "I_Quadbike_01_F",
-  "I_G_Quadbike_01_F",
 //  "O_Truck_02_covered_F",
 //  "I_Truck_02_covered_F",
 //  "O_Truck_02_transport_F",
 //  "I_Truck_02_transport_F",
   "rhsusf_m1025_w_s_m2",
+  "rhsusf_m1025_w_s_mk19",
   "B_G_Offroad_01_armed_F"
 ];
 
@@ -58,9 +57,12 @@ mediumMilitaryVehicles =
 //  "B_MRAP_01_F",
 //  "O_MRAP_02_F",
 //  "I_MRAP_03_F"
-  "rhsusf_m1025_w_s",
-  "rhsusf_m998_w_s_4dr"
-  
+	"rhs_brm1k_tv",
+	"rhs_brm1k_msv",
+	"rhs_bmd1r",
+	"rhs_btr60_vdv",
+	"rhsusf_m113_usarmy",
+	"RHS_M2A2_wd"  
 ];
 
 //Water Vehicles - Random Spawns
@@ -152,7 +154,9 @@ staticWeaponsList =
 staticHeliList =
 [
   "B_Heli_Light_01_F",
-  "rhs_ka60_c"
+  "rhs_ka60_c",
+  "rhs_uh60m",
+  "RHS_Mi8mt_vvs"
   // don't put cargo helicopters here, it doesn't make sense to find them in towns; they spawn in the CivHeli mission
 ];
 
