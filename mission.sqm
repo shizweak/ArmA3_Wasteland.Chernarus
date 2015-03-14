@@ -12,7 +12,9 @@ class Mission
 		"aia_chernarus_config",
 		"A3_Structures_F_EPC_Civ_Accessories",
 		"A3_Soft_F_Gamma_HEMTT",
-		"A3_Soft_F_EPC_Truck_03"
+		"A3_Soft_F_EPC_Truck_03",
+		"A3_Structures_F_Walls",
+		"A3_Structures_F_Mil_TentHangar"
 	};
 	addOnsAuto[]=
 	{
@@ -24,6 +26,8 @@ class Mission
 		"A3_Structures_F_EPC_Civ_Accessories",
 		"A3_Soft_F_Gamma_HEMTT",
 		"A3_Soft_F_EPC_Truck_03",
+		"A3_Structures_F_Walls",
+		"A3_Structures_F_Mil_TentHangar",
 		"aia_chernarus_config"
 	};
 	randomSeed=7312376;
@@ -1944,7 +1948,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=21;
+		items=27;
 		class Item0
 		{
 			position[]={13420.682,5.5103807,6211.2944};
@@ -2200,332 +2204,394 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
+		class Item21
+		{
+			position[]={4612.4702,0.018407799,2483.1499};
+			azimut=158.383;
+			offsetY=-0.00162888;
+			id=178;
+			side="EMPTY";
+			vehicle="Land_Rampart_F";
+			skill=0.60000002;
+			init="this allowDamage false";
+		};
+		class Item22
+		{
+			position[]={4626.7202,0.00036239601,2488.6699};
+			azimut=67.107002;
+			id=179;
+			side="EMPTY";
+			vehicle="Land_TentHangar_V1_F";
+			skill=0.60000002;
+			init="this allowDamage false";
+		};
+		class Item23
+		{
+			position[]={4238.5,0,10856.5};
+			azimut=240.371;
+			id=180;
+			side="EMPTY";
+			vehicle="Land_TentHangar_V1_F";
+			skill=0.60000002;
+			init="this allowDamage false";
+		};
+		class Item24
+		{
+			position[]={4252.1099,0,10863.5};
+			azimut=331.647;
+			id=181;
+			side="EMPTY";
+			vehicle="Land_Rampart_F";
+			skill=0.60000002;
+			init="this allowDamage false";
+		};
+		class Item25
+		{
+			position[]={11793.283,158.84378,12828.21};
+			azimut=110.472;
+			id=182;
+			side="EMPTY";
+			vehicle="Land_TentHangar_V1_F";
+			skill=0.60000002;
+			init="this allowDamage false";
+		};
+		class Item26
+		{
+			position[]={11779.184,158.93265,12834.11};
+			azimut=201.733;
+			offsetY=-0.00158691;
+			id=183;
+			side="EMPTY";
+			vehicle="Land_Rampart_F";
+			skill=0.60000002;
+			init="this allowDamage false";
+		};
 	};
 	class Markers
 	{
-		items=144;
-    class Item0
-    {
-      position[]={6731.21,-6,2554.1299};
-      name="Town_1";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item1
-    {
-      position[]={9127.1797,-232.93201,3954.47};
-      name="Town_3";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item2
-    {
-      position[]={10313.7,-5.74471,2159.4099};
-      name="Town_4";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item3
-    {
-      position[]={12063.1,-5.8171601,3515.5801};
-      name="Town_5";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item4
-    {
-      position[]={12802.5,-186.022,4369.4902};
-      name="Town_6";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item5
-    {
-      position[]={13397.4,-5.9929199,6336.8398};
-      name="Town_7";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item6
-    {
-      position[]={12824.9,-6.49828,8097.7002};
-      name="Town_8";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item7
-    {
-      position[]={12014,-54,9090.8398};
-      name="Town_9";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item8
-    {
-      position[]={12329.3,-97.136497,10771};
-      name="Town_10";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item9
-    {
-      position[]={13330.976,94.657249,12900.606};
-      name="Town_11";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item10
-    {
-      position[]={11224.3,-196.478,12274.5};
-      name="Town_12";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item11
-    {
-      position[]={8614.6201,-187.511,11890.3};
-      name="Town_13";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item12
-    {
-      position[]={5959.9399,-267.08401,10335.7};
-      name="Town_14";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item13
-    {
-      position[]={5016.4502,-182,12490.8};
-      name="Town_15";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item14
-    {
-      position[]={2750,-274.01001,10005};
-      name="Town_16";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item15
-    {
-      position[]={3833.1699,-310.98999,8918.9199};
-      name="Town_17";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item16
-    {
-      position[]={3070.23,-299.56601,7940.48};
-      name="Town_18";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item17
-    {
-      position[]={1998.1801,-253.80499,7355.1299};
-      name="Town_19";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item18
-    {
-      position[]={2539.26,-300.64801,6358.71};
-      name="Town_20";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item19
-    {
-      position[]={2774.26,-208.998,5380.3799};
-      name="Town_21";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item20
-    {
-      position[]={1693.98,-143.995,3858.6499};
-      name="Town_22";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item21
-    {
-      position[]={1853.09,-6.8709898,2249.8501};
-      name="Town_23";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item22
-    {
-      position[]={3664.3101,-7.4257698,2499};
-      name="Town_24";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item23
-    {
-      position[]={4527.5801,-6.2763,2465.3201};
-      name="Town_25";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item24
-    {
-      position[]={3326.74,-186.50101,3886.73};
-      name="Town_26";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item25
-    {
-      position[]={3382.02,-241.035,4925.8799};
-      name="Town_27";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item26
-    {
-      position[]={4477.5698,-231.83501,4597.79};
-      name="Town_28";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item27
-    {
-      position[]={4950.8198,-320.133,5627.1001};
-      name="Town_29";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item28
-    {
-      position[]={4435.3599,-298.62201,6425.5801};
-      name="Town_30";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item29
-    {
-      position[]={4770.96,-271.332,6835.2598};
-      name="Town_31";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item30
-    {
-      position[]={5300.71,-334.20801,8645.9004};
-      name="Town_32";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item31
-    {
-      position[]={6169.0098,-301.33401,7793.6699};
-      name="Town_33";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item32
-    {
-      position[]={7123.6299,-294.03699,7774.6299};
-      name="Town_34";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item33
-    {
-      position[]={6561.9102,-322,6078.77};
-      name="Town_35";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item34
-    {
-      position[]={7650.4102,-207.763,5096.46};
-      name="Town_36";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item35
-    {
-      position[]={8431.0801,-359.38901,6703.1899};
-      name="Town_37";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item36
-    {
-      position[]={9616.0596,-304.99399,8914.3799};
-      name="Town_38";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item37
-    {
-      position[]={9728.6396,-199.894,6567.2998};
-      name="Town_39";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item38
-    {
-      position[]={10212.5,-230.455,5385.04};
-      name="Town_40";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item39
-    {
-      position[]={11333.8,-237.321,5421.3999};
-      name="Town_41";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item40
-    {
-      position[]={11285.2,-81.399803,6633.5801};
-      name="Town_42";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item41
-    {
-      position[]={12131,-190.98599,7189.79};
-      name="Town_43";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item42
-    {
-      position[]={10707.1,-211.021,8053.29};
-      name="Town_44";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item43
-    {
-      position[]={5876.6602,-140.70599,4696.9302};
-      name="Town_45";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item44
-    {
-      position[]={10382.1,-125.734,9938.3496};
-      name="Town_46";
-      type="Empty";
-      colorName="ColorRed";
-    };
-    class Item45
-    {
-      position[]={12179.505,159,12662.224};
-      name="Town_2";
-      type="Empty";
-      colorName="ColorRed";
-    };
+		items=164;
+		class Item0
+		{
+			position[]={6731.21,-6,2554.1299};
+			name="Town_1";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item1
+		{
+			position[]={9127.1797,-232.93201,3954.47};
+			name="Town_3";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item2
+		{
+			position[]={10313.7,-5.74471,2159.4099};
+			name="Town_4";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item3
+		{
+			position[]={12063.1,-5.8171601,3515.5801};
+			name="Town_5";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item4
+		{
+			position[]={12802.5,-186.022,4369.4902};
+			name="Town_6";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item5
+		{
+			position[]={13397.4,-5.9929199,6336.8398};
+			name="Town_7";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item6
+		{
+			position[]={12824.9,-6.49828,8097.7002};
+			name="Town_8";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item7
+		{
+			position[]={12014,-54,9090.8398};
+			name="Town_9";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item8
+		{
+			position[]={12329.3,-97.136497,10771};
+			name="Town_10";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item9
+		{
+			position[]={13330.976,94.657249,12900.606};
+			name="Town_11";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item10
+		{
+			position[]={11224.3,-196.478,12274.5};
+			name="Town_12";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item11
+		{
+			position[]={8614.6201,-187.511,11890.3};
+			name="Town_13";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item12
+		{
+			position[]={5959.9399,-267.08401,10335.7};
+			name="Town_14";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item13
+		{
+			position[]={5016.4502,-182,12490.8};
+			name="Town_15";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item14
+		{
+			position[]={2750,-274.01001,10005};
+			name="Town_16";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item15
+		{
+			position[]={3833.1699,-310.98999,8918.9199};
+			name="Town_17";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item16
+		{
+			position[]={3070.23,-299.56601,7940.48};
+			name="Town_18";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item17
+		{
+			position[]={1998.1801,-253.80499,7355.1299};
+			name="Town_19";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item18
+		{
+			position[]={2539.26,-300.64801,6358.71};
+			name="Town_20";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item19
+		{
+			position[]={2774.26,-208.998,5380.3799};
+			name="Town_21";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item20
+		{
+			position[]={1693.98,-143.995,3858.6499};
+			name="Town_22";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item21
+		{
+			position[]={1853.09,-6.8709898,2249.8501};
+			name="Town_23";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item22
+		{
+			position[]={3664.3101,-7.4257698,2499};
+			name="Town_24";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item23
+		{
+			position[]={4527.5801,-6.2763,2465.3201};
+			name="Town_25";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item24
+		{
+			position[]={3326.74,-186.50101,3886.73};
+			name="Town_26";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item25
+		{
+			position[]={3382.02,-241.035,4925.8799};
+			name="Town_27";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item26
+		{
+			position[]={4477.5698,-231.83501,4597.79};
+			name="Town_28";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item27
+		{
+			position[]={4950.8198,-320.133,5627.1001};
+			name="Town_29";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item28
+		{
+			position[]={4435.3599,-298.62201,6425.5801};
+			name="Town_30";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item29
+		{
+			position[]={4770.96,-271.332,6835.2598};
+			name="Town_31";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item30
+		{
+			position[]={5300.71,-334.20801,8645.9004};
+			name="Town_32";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item31
+		{
+			position[]={6169.0098,-301.33401,7793.6699};
+			name="Town_33";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item32
+		{
+			position[]={7123.6299,-294.03699,7774.6299};
+			name="Town_34";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item33
+		{
+			position[]={6561.9102,-322,6078.77};
+			name="Town_35";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item34
+		{
+			position[]={7650.4102,-207.763,5096.46};
+			name="Town_36";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item35
+		{
+			position[]={8431.0801,-359.38901,6703.1899};
+			name="Town_37";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item36
+		{
+			position[]={9616.0596,-304.99399,8914.3799};
+			name="Town_38";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item37
+		{
+			position[]={9728.6396,-199.894,6567.2998};
+			name="Town_39";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item38
+		{
+			position[]={10212.5,-230.455,5385.04};
+			name="Town_40";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item39
+		{
+			position[]={11333.8,-237.321,5421.3999};
+			name="Town_41";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item40
+		{
+			position[]={11285.2,-81.399803,6633.5801};
+			name="Town_42";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item41
+		{
+			position[]={12131,-190.98599,7189.79};
+			name="Town_43";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item42
+		{
+			position[]={10707.1,-211.021,8053.29};
+			name="Town_44";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item43
+		{
+			position[]={5876.6602,-140.70599,4696.9302};
+			name="Town_45";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item44
+		{
+			position[]={10382.1,-125.734,9938.3496};
+			name="Town_46";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item45
+		{
+			position[]={12107.823,158.98135,12621.787};
+			name="Town_2";
+			type="Empty";
+			colorName="ColorRed";
+		};
 		class Item46
 		{
 			position[]={428.31763,634.75702,15125.764};
@@ -2681,19 +2747,19 @@ class Mission
 		};
 		class Item67
 		{
-			position[]={11797.447,158.89929,12826.913};
+			position[]={11674.662,165.90471,13090.616};
 			name="Mission_4";
 			type="Empty";
 		};
 		class Item68
 		{
-			position[]={8740.4893,382.8573,9303.0996};
+			position[]={8751.627,386.02365,9203.5938};
 			name="Mission_5";
 			type="Empty";
 		};
 		class Item69
 		{
-			position[]={4634.3481,9,2561.0669};
+			position[]={4865.5073,8.8442783,2538.3208};
 			name="Mission_6";
 			type="Empty";
 		};
@@ -2765,7 +2831,7 @@ class Mission
 		};
 		class Item81
 		{
-			position[]={13219.021,36.808949,3140.8574};
+			position[]={13628.244,32.313999,3157.6582};
 			name="Mission_18";
 			type="Empty";
 		};
@@ -2789,7 +2855,7 @@ class Mission
 		};
 		class Item85
 		{
-			position[]={8364.2441,33.109501,2498.1172};
+			position[]={8357.9805,33.473713,2494.7617};
 			name="Mission_22";
 			type="Empty";
 		};
@@ -2873,14 +2939,14 @@ class Mission
 		};
 		class Item98
 		{
-			position[]={12039.44,159,12739.479};
+			position[]={12049.2,158.92184,12687.068};
 			name="heliSpawn_7";
 			type="Empty";
 			colorName="ColorGreen";
 		};
 		class Item99
 		{
-			position[]={12215.236,159,12676.536};
+			position[]={11419.343,197.63152,12619.477};
 			name="heliSpawn_8";
 			type="Empty";
 			colorName="ColorGreen";
@@ -2901,7 +2967,7 @@ class Mission
 		};
 		class Item102
 		{
-			position[]={4927.2891,9,2392.1814};
+			position[]={5044.8936,8.966958,2375.084};
 			name="heliSpawn_11";
 			type="Empty";
 			colorName="ColorGreen";
@@ -3062,7 +3128,7 @@ class Mission
 		};
 		class Item121
 		{
-			position[]={4769,9.5,2535};
+			position[]={4782.8696,9,2523.1475};
 			name="VehStore1_landSpawn";
 			type="Empty";
 			colorName="ColorBlack";
@@ -3070,7 +3136,7 @@ class Mission
 		};
 		class Item122
 		{
-			position[]={4725,9.5,2551};
+			position[]={4735.3389,9,2548.7302};
 			name="VehStore1_heliSpawn";
 			type="Empty";
 			colorName="ColorBlack";
@@ -3078,11 +3144,11 @@ class Mission
 		};
 		class Item123
 		{
-			position[]={4712,10,2516};
+			position[]={4678.3413,9,2586.6531};
 			name="VehStore1_planeSpawn";
 			type="Empty";
 			colorName="ColorBlack";
-			angle=-27.134336;
+			angle=-134.05089;
 		};
 		class Item124
 		{
@@ -3299,6 +3365,160 @@ class Mission
 			a=40;
 			b=25;
 			angle=8.3120098;
+		};
+		class Item144
+		{
+			position[]={4237.8335,339,10856.322};
+			name="JetMission_1";
+			type="Empty";
+			colorName="ColorOrange";
+			angle=-117.37659;
+		};
+		class Item145
+		{
+			position[]={11793.455,158.84608,12828.639};
+			name="JetMission_2";
+			type="Empty";
+			colorName="ColorOrange";
+			angle=-245.82526;
+		};
+		class Item146
+		{
+			position[]={4626.9722,8.9794159,2488.4561};
+			name="JetMission_3";
+			type="Empty";
+			colorName="ColorOrange";
+			angle=-287.77881;
+		};
+		class Item147
+		{
+			position[]={7759.6333,4.4305301,3410.2678};
+			name="AHMission_1";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item148
+		{
+			position[]={12751.47,6,9514.5488};
+			name="AHMission_2";
+			type="Empty";
+			colorName="ColorBrown";
+			angle=-105.12139;
+		};
+		class Item149
+		{
+			position[]={13633.428,4.1808677,11164.905};
+			name="AHMission_3";
+			type="Empty";
+			colorName="ColorBrown";
+			angle=-49.31839;
+		};
+		class Item150
+		{
+			position[]={13368.862,64.644241,12006.556};
+			name="AHMission_4";
+			type="Empty";
+			colorName="ColorBrown";
+			angle=52.307678;
+		};
+		class Item151
+		{
+			position[]={13158.709,6.3987308,14107.116};
+			name="AHMission_5";
+			type="Empty";
+			colorName="ColorBrown";
+			angle=146.62943;
+		};
+		class Item152
+		{
+			position[]={9635.7158,243.56691,11545.991};
+			name="AHMission_6";
+			type="Empty";
+			colorName="ColorBrown";
+			angle=229.74414;
+		};
+		class Item153
+		{
+			position[]={9260.5869,238.90498,11386.254};
+			name="AHMission_7";
+			type="Empty";
+			colorName="ColorBrown";
+			angle=48.77177;
+		};
+		class Item154
+		{
+			position[]={7513.4297,285.61264,11531.544};
+			name="AHMission_8";
+			type="Empty";
+			colorName="ColorBrown";
+			angle=58.196087;
+		};
+		class Item155
+		{
+			position[]={5843.562,266.11639,10960.186};
+			name="AHMission_9";
+			type="Empty";
+			colorName="ColorBrown";
+			angle=-54.787693;
+		};
+		class Item156
+		{
+			position[]={4570.1064,318.5816,8312.8281};
+			name="AHMission_10";
+			type="Empty";
+			colorName="ColorBrown";
+			angle=42.903618;
+		};
+		class Item157
+		{
+			position[]={4352.4727,336.63922,9782.0635};
+			name="AHMission_11";
+			type="Empty";
+			colorName="ColorBrown";
+			angle=-48.001411;
+		};
+		class Item158
+		{
+			position[]={2221.7476,341.61295,8091.1714};
+			name="AHMission_12";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item159
+		{
+			position[]={1002.2993,174.2625,7503.3091};
+			name="AHMission_13";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item160
+		{
+			position[]={1555.3308,150.51506,5209.4077};
+			name="AHMission_14";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item161
+		{
+			position[]={1157.366,136.00165,4046.104};
+			name="AHMission_15";
+			type="Empty";
+			colorName="ColorBrown";
+			angle=53.65836;
+		};
+		class Item162
+		{
+			position[]={4160.8882,8.741087,2819.4966};
+			name="AHMission_16";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item163
+		{
+			position[]={5686.0845,74.33213,2559.7178};
+			name="AHMission_17";
+			type="Empty";
+			colorName="ColorBrown";
 		};
 	};
 };

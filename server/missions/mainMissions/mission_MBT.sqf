@@ -19,6 +19,12 @@ _setupVars =
 	"rhs_t72bb_tv",
 	"rhs_t72bc_tv",
 	"rhs_t72bd_tv",
+	"rhs_t80a",
+	"rhs_t80b",
+	"rhs_t80bk",
+	"rhs_t80bv",
+	"rhs_t80bvk",
+	"rhs_t80u",
 	"rhsusf_m1a1aimwd_usarmy",
 	"rhsusf_m1a1aimd_usarmy",
 	"rhsusf_m1a1aim_tuski_wd",
@@ -28,10 +34,18 @@ _setupVars =
 	"rhsusf_m1a2sep1wd_usarmy",
 	"rhsusf_m1a2sep1d_usarmy",
 	"rhsusf_m1a2sep1tuskiwd_usarmy",
-	"rhsusf_m1a2sep1tuskid_usarmy"
+	"rhsusf_m1a2sep1tuskid_usarmy",
+	"rhs_sprut_vdv"
 	] call BIS_fnc_selectRandom;
 
-	_missionType = "Main Battle Tank";
+	//_missionType = "Main Battle Tank";
+	
+	_missionType = switch (true) do
+	{
+		case (_vehicleClass isKindOf "rhs_sprut_vdv"): { "Tank Destroyer" };
+		default { "Main Battle Tank" };
+	
+	};
 	_locationsArray = MissionSpawnMarkers;
 
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
