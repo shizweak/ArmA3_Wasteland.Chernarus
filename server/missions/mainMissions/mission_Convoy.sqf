@@ -42,9 +42,9 @@ _setupObjects =
 	// pick the vehicles for the convoy
 	_convoyVeh =
 	[
-		["rhsusf_m1025_w_s_mk19", "rhsusf_m1025_w_s_m2"],
-		["rhsusf_m1025_w_s_mk19", "rhsusf_m1025_w_s_m2"],
-		["rhsusf_m1025_w_s_mk19", "rhsusf_m1025_w_s_m2"]
+		["rhsusf_m1025_w_s_m2", "rhsusf_m1025_w_s_mk19", "rhsusf_m1025_w_s_m2"],
+		["rhsusf_m1025_w_s_m2", "rhsusf_m1025_w_s_mk19", "rhsusf_m1025_w_s_m2"],
+		["rhsusf_m1025_w_s_m2", "rhsusf_m1025_w_s_mk19", "rhsusf_m1025_w_s_m2"]
 	] call BIS_fnc_selectRandom;
 
 	_veh1 = _convoyVeh select 0;
