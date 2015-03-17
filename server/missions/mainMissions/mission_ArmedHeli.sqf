@@ -26,11 +26,16 @@ _setupVars =
 	"B_Heli_Light_01_armed_F" //will be setup as an experimental chopper - no DARs but 20mm cannons
 	] call BIS_fnc_selectRandom;
 
+	_missionType = "Attack Helicopter";
+	
+	/*
 	_missionType = switch (true) do
 	{
 		case (_vehicleClass isKindOf "B_Heli_Light_01_armed_F"): { "Experimental Attack Helicopter" };
 		default { "Attack Helicopter" };
-	}; 
+	};
+	*/
+	
 	_locationsArray = AHMissionSpawnMarkers;
 
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };

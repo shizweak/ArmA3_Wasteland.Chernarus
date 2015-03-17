@@ -131,6 +131,7 @@ _setupObjects =
 			_vehicle setVehicleAmmoDef 1;
 		};
 
+		/*
 		// Mi-48 Kajman
 		case (_vehicle isKindOf "Heli_Attack_02_base_F"):
 		{
@@ -141,6 +142,7 @@ _setupObjects =
 			_vehicle addMagazine ["38Rnd_80mm_rockets", 20];
 			_vehicle addmagazine ["8Rnd_LG_scalpel", 2];
 		};
+		*/
 		//AA Buzzard
 		case (_vehicle isKindOf "I_Plane_Fighter_03_AA_F");
 		{
@@ -152,6 +154,7 @@ _setupObjects =
 			_vehicle addMagazine "300Rnd_20mm_shells";
 			_vehicle addMagazine "300Rnd_20mm_shells";
 		};
+		/*
 		// Pawnee - Experimental
 		case (_vehicle isKindOf "B_Heli_Light_01_armed_F"):
 		{
@@ -161,6 +164,7 @@ _setupObjects =
 			_vehicle addmagazine "1000Rnd_20mm_shells";
 			_vehicle addmagazine "1000Rnd_20mm_shells";
 		};
+		*/
 		// All other helicopters
 		case (_vehicle isKindOf "Helicopter_Base_F"):
 		{

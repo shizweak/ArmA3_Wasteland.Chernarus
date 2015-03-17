@@ -106,6 +106,10 @@ switch (true) do
 		_vehicle removeWeaponTurret ["missiles_SCALPEL",[-1]];
 		_vehicle removeWeaponTurret ["missiles_ASRAAM",[-1]];
 	};
+	/*case (_class isKindOf "Helicopter_Base_F"):
+	{
+		_vehicle setVehicleAmmoDef 1;
+	}; */
 };
 
 _weapons = getArray (configFile >> "CfgVehicles" >> _class >> "weapons");
