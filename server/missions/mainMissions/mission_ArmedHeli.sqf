@@ -17,31 +17,26 @@ _setupVars =
 	[
 	"RHS_Ka52_vvs",
 	"RHS_Ka52_vvsc",
-	"RHS_Mi24P_vdv",
-	"RHS_Mi24V_vdv",
-	"RHS_Mi24P_vvs",
-	"RHS_Mi24V_vvs",
 	"RHS_Mi24P_vvsc",
 	"RHS_Mi24V_vvsc",
-	"RHS_Mi8AMT_vdv",
-	"RHS_Mi8AMT_vvs",
-	"RHS_Mi8AMT_vvsc",
-	"RHS_Mi8AMTSh_vdv",
-	"RHS_Mi8AMTSh_vvs",
 	"RHS_Mi8AMTSh_vvsc",
-	"RHS_Mi8MTV3_vdv",
-	"RHS_Mi8MTV3_vvs",
 	"RHS_Mi8MTV3_vvsc",
 	"rhs_ah64d_wd",
 	"rhs_ah64d",
-	"rhs_ch_47f",
-	"rhs_ch_47f_light",
-	"rhs_uh60m",
-	"rhs_uh60m_d"
+	"B_Heli_Light_01_armed_F" //will be setup as an experimental chopper - no DARs but 20mm cannons
 	] call BIS_fnc_selectRandom;
 
-	_missionType = "Armed Helicopter";
-	_locationsArray = MissionSpawnMarkers;
+	_missionType = "Attack Helicopter";
+	
+	/*
+	_missionType = switch (true) do
+	{
+		case (_vehicleClass isKindOf "B_Heli_Light_01_armed_F"): { "Experimental Attack Helicopter" };
+		default { "Attack Helicopter" };
+	};
+	*/
+	
+	_locationsArray = AHMissionSpawnMarkers;
 
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
 };

@@ -12,12 +12,13 @@ MainMissions =
 	["mission_ArmedDiversquad", 1],
 	["mission_Coastal_Convoy", 1],
 	["mission_Convoy", 1],
-	["mission_HostileHeliFormation", 0.5],
+	//["mission_HostileHeliFormation", 0.5],
 	["mission_APC", 1],
 	["mission_MBT", 1],
-	["mission_LightArmVeh", 1],
+	//["mission_LightArmVeh", 1],
 	["mission_ArmedHeli", 1],
-	["mission_CivHeli", 1]
+	["mission_CivHeli", 1],
+	["mission_Jet", 1]
 ];
 
 SideMissions =
@@ -48,6 +49,8 @@ MoneyMissions = [MoneyMissions, [["A3W_underWaterMissions", ["mission_SunkenTrea
 { _x set [2, false] } forEach MoneyMissions;
 
 MissionSpawnMarkers = [];
+JetMissionSpawnMarkers = [];
+AHMissionSpawnMarkers = [];
 SunkenMissionMarkers = [];
 {
 	switch (true) do
@@ -59,6 +62,14 @@ SunkenMissionMarkers = [];
 		case (["SunkenMission_", _x] call fn_startsWith):
 		{
 			SunkenMissionMarkers pushBack [_x, false];
+		};
+		case (["JetMission_", _x] call fn_startsWith):
+		{
+			JetMissionSpawnMarkers pushBack [_x, false];
+		};
+		case (["AHMission_", _x] call fn_startsWith):
+		{
+			AHMissionSpawnMarkers pushBack [_x, false];
 		};
 	};
 } forEach allMapMarkers;

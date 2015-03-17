@@ -15,38 +15,22 @@ _setupVars =
 {
 	_vehicleClass =
 	[
-	"rhs_t72ba_tv",
-	"rhs_t72bb_tv",
-	"rhs_t72bc_tv",
-	"rhs_t72bd_tv",
-	"rhs_t80a",
-	"rhs_t80b",
-	"rhs_t80bk",
-	"rhs_t80bv",
-	"rhs_t80bvk",
-	"rhs_t80u",
-	"rhsusf_m1a1aimwd_usarmy",
-	"rhsusf_m1a1aimd_usarmy",
-	"rhsusf_m1a1aim_tuski_wd",
-	"rhsusf_m1a1aim_tuski_d",
-	"rhsusf_m1a1fep_wd",
-	"rhsusf_m1a1fep_d",
-	"rhsusf_m1a2sep1wd_usarmy",
-	"rhsusf_m1a2sep1d_usarmy",
-	"rhsusf_m1a2sep1tuskiwd_usarmy",
-	"rhsusf_m1a2sep1tuskid_usarmy",
-	"rhs_sprut_vdv"
+	"RHS_A10",
+	"RHS_Su25SM_vvs",
+	"I_Plane_Fighter_03_AA_F"
 	] call BIS_fnc_selectRandom;
 
-	//_missionType = "Main Battle Tank";
+	//_missionType = "Attack Jet";
 	
 	_missionType = switch (true) do
 	{
-		case (_vehicleClass isKindOf "rhs_sprut_vdv"): { "Tank Destroyer" };
-		default { "Main Battle Tank" };
+		case (_vehicleClass isKindOf "I_Plane_Fighter_03_AA_F"): { "Air Superiority Jet" };
+		default { "Close Air Support Jet" };
 	
-	};
-	_locationsArray = MissionSpawnMarkers;
+	}; 
+	
+	//_locationsArray = MissionSpawnMarkers;
+	_locationsArray = JetMissionSpawnMarkers;
 
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
 };

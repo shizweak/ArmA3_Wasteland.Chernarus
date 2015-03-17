@@ -35,7 +35,8 @@ _setupObjects =
 		"I_Truck_02_covered_F",
 		"I_Truck_02_fuel_F",
 		"I_Truck_02_medical_F",
-		"I_Truck_02_box_F"
+		"I_Truck_02_box_F",
+		"I_Truck_02_ammo_F"
 	] call BIS_fnc_selectRandom;
 
 	// Class, Position, Fuel, Ammo, Damage, Special
@@ -66,7 +67,14 @@ _successExec =
 {
 	// Mission completed
 	_vehicle lock 1;
-	_vehicle setVariable ["R3F_LOG_disabled", false, true];
+	if (_vehicle isKindOf "I_Truck_02_ammo_F") then 
+	{
+		_vehicle setVariable ["R3F_LOG_disabled", true, true];
+	}
+	else
+	{
+		_vehicle setVariable ["R3F_LOG_disabled", false, true];
+	};
 
 	_successHintMessage = "The truck has been captured, well done.";
 };
