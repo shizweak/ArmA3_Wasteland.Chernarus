@@ -10,16 +10,16 @@
 // Name, Building Position, Desk Direction (or [Desk Direction, Front Offset]), Excluded Buttons
 storeOwnerConfig = compileFinal str
 [
-	["GenStore1", 5, 280, []],
-	["GenStore2", 6, 165, []],
-	["GenStore3", 6, 295, []],
-	["GenStore4", 0, 265, []],
-	["GenStore5", 5, 350, []],
+	["GenStore1", 5, 280, []],  // Elektro General Store
+	["GenStore2", 6, 165, []],  // Kamenka General Store
+	["GenStore3", 6, 295, []],  // Vybor General Store
+	["GenStore4", 2, 120, []],  // Krasnostav General Store
 
-	["GunStore1", 3, 90, []],
-	["GunStore2", 1, 180, []],
-	["GunStore3", 6, 165, []],
-	["GunStore4", 1, 60, []],
+	["GunStore1", 3, 90, []],   // Solnichniy Gun Store
+	["GunStore3", 6, 165, []],  // Gvodzno Gun Store
+	["GunStore4", 1, 60, []],   // Stary Gun Store
+	["GunStore5", 1, 256, []],  // Cherno Gun Store
+	["GunStore6", 2, 70, []],   // Zelengorsk Gun Store
 
 	// Buttons you can disable: "Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"
 	["VehStore1", 1, 75, []],
@@ -42,6 +42,8 @@ storeOwnerConfigAppearance = compileFinal str
 	["GunStore2", [["weapon", ""], ["uniform", "U_O_SpecopsUniform_blk"]]],
 	["GunStore3", [["weapon", ""], ["uniform", "U_I_CombatUniform_tshirt"]]],
 	["GunStore4", [["weapon", ""], ["uniform", "U_IG_Guerilla1_1"]]],
+	["GunStore5", [["weapon", ""], ["uniform", "U_O_SpecopsUniform_blk"]]],
+	["GunStore6", [["weapon", ""], ["uniform", "U_IG_Guerilla1_1"]]],
 
 	["VehStore1", [["weapon", ""], ["uniform", "U_Competitor"]]],
 	["VehStore2", [["weapon", ""], ["uniform", "U_Competitor"]]],

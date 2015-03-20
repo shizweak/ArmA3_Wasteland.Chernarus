@@ -53,7 +53,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=49;
+		items=51;
 		class Item0
 		{
 			side="WEST";
@@ -1701,6 +1701,7 @@ class Mission
 				items=1;
 				class Item0
 				{
+					comment="Solnichniy Gun Store";
 					position[]={13375.588,6,6227.4385};
 					azimut=90;
 					id=145;
@@ -1722,6 +1723,7 @@ class Mission
 				items=1;
 				class Item0
 				{
+				    comment="Elektro General Store";
 					position[]={10452.28,5.9899998,2342.489};
 					azimut=280;
 					id=146;
@@ -1743,6 +1745,7 @@ class Mission
 				items=1;
 				class Item0
 				{
+				    comment="Gvodzno Gun Store";
 					position[]={8537.4922,178.60397,11926.595};
 					azimut=163.56032;
 					id=147;
@@ -1764,6 +1767,7 @@ class Mission
 				items=1;
 				class Item0
 				{
+				    comment="Stary Gun Store";
 					position[]={5997.3149,301.09085,7807.0791};
 					azimut=65;
 					id=148;
@@ -1806,6 +1810,7 @@ class Mission
 				items=1;
 				class Item0
 				{
+					comment="Cherno Gun Store";
 					position[]={6903.5981,6,2491.7627};
 					azimut=197.78493;
 					id=150;
@@ -1813,7 +1818,7 @@ class Mission
 					vehicle="C_man_1_1_F";
 					leader=1;
 					skill=0.60000002;
-					text="GunStore2";
+					text="GunStore5";
 					init="[this] spawn A3W_fnc_setupStoreNPC";
 					description="DO NOT MODIFY IN EDITOR";
 				};
@@ -1827,6 +1832,7 @@ class Mission
 				items=1;
 				class Item0
 				{
+				    comment="Kamenka General Store";
 					position[]={1888.9232,7.3909378,2265.7451};
 					azimut=165;
 					id=151;
@@ -1848,6 +1854,7 @@ class Mission
 				items=1;
 				class Item0
 				{
+				    comment="Vybor General Store";
 					position[]={3807.4861,310.99335,8925.0908};
 					azimut=-64.914688;
 					id=152;
@@ -1945,10 +1952,54 @@ class Mission
 				};
 			};
 		};
+		class Item49
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					comment="Zelengorsk Gun Store";
+					position[]={2591.34,0.00143433,5062.61};
+			        azimut=256.963;
+					id=147;
+					side="LOGIC";
+					vehicle="C_man_1_1_F";
+					leader=1;
+					skill=0.60000002;
+					text="GunStore6";
+					init="[this] spawn A3W_fnc_setupStoreNPC";
+					description="DO NOT MODIFY IN EDITOR";
+				};
+			};
+		};
+		class Item50
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					comment="Kraznostav General Store";
+                    position[]={11249.8,0.00143433,12203.4};
+                    azimut=343.148;
+					id=147;
+					side="LOGIC";
+					vehicle="C_man_1_1_F";
+					leader=1;
+					skill=0.60000002;
+					text="GenStore4";
+					init="[this] spawn A3W_fnc_setupStoreNPC";
+					description="DO NOT MODIFY IN EDITOR";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=27;
+		items=29;
 		class Item0
 		{
 			position[]={13420.682,5.5103807,6211.2944};
@@ -2063,29 +2114,27 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={13044.045,6,10122.329};
-			azimut=-31.033257;
-			id=167;
+			comment="Gvozdno ATM";
+			position[]={8556.44,0,11966};
+			azimut=156.656;
+			id=165;
 			side="EMPTY";
-			vehicle="B_Truck_01_box_F";
-			leader=1;
-			lock="LOCKED";
+			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this call A3W_fnc_setupSellTruck";
-			description="Sell Vehicle";
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
 		};
 		class Item11
 		{
-			position[]={10195.745,6.0001683,2004.2129};
-			azimut=-63.931587;
-			id=168;
+			comment="Zelengorsk ATM";
+			position[]={2598.9,0,5108.24};
+			azimut=312.058;
+			id=165;
 			side="EMPTY";
-			vehicle="B_Truck_01_box_F";
-			leader=1;
-			lock="LOCKED";
+			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this call A3W_fnc_setupSellTruck";
-			description="Sell Vehicle";
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
 		};
 		class Item12
 		{
@@ -2128,7 +2177,35 @@ class Mission
 		};
 		class Item15
 		{
-			position[]={8768.4004,201.86099,11808.4};
+			position[]={13044.045,6,10122.329};
+			azimut=-31.033257;
+			id=167;
+			side="EMPTY";
+			vehicle="B_Truck_01_box_F";
+			leader=1;
+			lock="LOCKED";
+			skill=0.60000002;
+			init="this call A3W_fnc_setupSellTruck";
+			description="Sell Vehicle";
+		};
+		class Item16
+		{
+			position[]={10195.745,6.0001683,2004.2129};
+			azimut=-63.931587;
+			id=168;
+			side="EMPTY";
+			vehicle="B_Truck_01_box_F";
+			leader=1;
+			lock="LOCKED";
+			skill=0.60000002;
+			init="this call A3W_fnc_setupSellTruck";
+			description="Sell Vehicle";
+		};
+
+		class Item17
+		{
+			comment="NEAF Vehicle Seller";
+			position[]={12247.6,0,12588.3};
 			azimut=-63.931587;
 			id=172;
 			side="EMPTY";
@@ -2139,7 +2216,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item16
+		class Item18
 		{
 			position[]={2575.8201,292.51199,6285.9502};
 			azimut=-63.931587;
@@ -2152,7 +2229,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item17
+		class Item19
 		{
 			position[]={1699.42,16.626801,2324.1799};
 			azimut=-63.931587;
@@ -2165,7 +2242,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item18
+		class Item20
 		{
 			position[]={5801.8301,127.33,4817.8501};
 			azimut=-63.931587;
@@ -2178,7 +2255,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item19
+		class Item21
 		{
 			position[]={7030.75,300.686,7821.9902};
 			azimut=-63.931587;
@@ -2191,7 +2268,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item20
+		class Item22
 		{
 			position[]={10064,245,5416};
 			azimut=-63.931587;
@@ -2204,8 +2281,20 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item21
+		class Item23
 		{
+			comment="Balota Aircraft Tent";
+			position[]={4626.7202,0.00036239601,2488.6699};
+			azimut=67.107002;
+			id=179;
+			side="EMPTY";
+			vehicle="Land_TentHangar_V1_F";
+			skill=0.60000002;
+			init="this allowDamage false";
+		};
+		class Item24
+		{
+			comment="Balota Aircraft Berm";
 			position[]={4612.4702,0.018407799,2483.1499};
 			azimut=158.383;
 			offsetY=-0.00162888;
@@ -2215,18 +2304,9 @@ class Mission
 			skill=0.60000002;
 			init="this allowDamage false";
 		};
-		class Item22
+		class Item25
 		{
-			position[]={4626.7202,0.00036239601,2488.6699};
-			azimut=67.107002;
-			id=179;
-			side="EMPTY";
-			vehicle="Land_TentHangar_V1_F";
-			skill=0.60000002;
-			init="this allowDamage false";
-		};
-		class Item23
-		{
+			comment="NWAF Aircraft Tent";
 			position[]={4238.5,0,10856.5};
 			azimut=240.371;
 			id=180;
@@ -2235,8 +2315,9 @@ class Mission
 			skill=0.60000002;
 			init="this allowDamage false";
 		};
-		class Item24
+		class Item26
 		{
+			comment="NWAF Aircraft Berm";
 			position[]={4252.1099,0,10863.5};
 			azimut=331.647;
 			id=181;
@@ -2245,8 +2326,9 @@ class Mission
 			skill=0.60000002;
 			init="this allowDamage false";
 		};
-		class Item25
+		class Item27
 		{
+			comment="NEAF Aircraft Tent";
 			position[]={11793.283,158.84378,12828.21};
 			azimut=110.472;
 			id=182;
@@ -2255,8 +2337,9 @@ class Mission
 			skill=0.60000002;
 			init="this allowDamage false";
 		};
-		class Item26
+		class Item28
 		{
+			comment="NEAF Aircraft Berm";
 			position[]={11779.184,158.93265,12834.11};
 			azimut=201.733;
 			offsetY=-0.00158691;
@@ -2269,7 +2352,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=164;
+		items=168;
 		class Item0
 		{
 			position[]={6731.21,-6,2554.1299};
@@ -2646,6 +2729,7 @@ class Mission
 		};
 		class Item53
 		{
+		    comment="Elektro General Store";
 			position[]={10454.125,5.982091,2353.4316};
 			name="GenStore1_objSpawn";
 			type="Empty";
@@ -2654,6 +2738,7 @@ class Mission
 		};
 		class Item54
 		{
+		    comment="Gvodzno Gun Store";
 			position[]={8559.9189,180.00473,11930.05};
 			name="GunStore3_objSpawn";
 			type="Empty";
@@ -2662,6 +2747,7 @@ class Mission
 		};
 		class Item55
 		{
+		    comment="Stary Gun Store";
 			position[]={6017.2715,301.039,7796.4072};
 			name="GunStore4_objSpawn";
 			type="Empty";
@@ -2699,21 +2785,24 @@ class Mission
 		};
 		class Item60
 		{
+			comment="Solnichniy Gun Store";
 			position[]={13376.342,5.9429622,6249.8564};
-			name="GunStore1_objSpawn_1";
+			name="GunStore1_objSpawn";
 			type="Empty";
 			colorName="ColorBlack";
 		};
 		class Item61
 		{
+			comment="Cherno Gun Store";
 			position[]={6897.5215,6,2498.4014};
-			name="GunStore2_objSpawn";
+			name="GunStore5_objSpawn";
 			type="Empty";
 			colorName="ColorBlack";
 			angle=-123.39913;
 		};
 		class Item62
 		{
+		    comment="Kamenka General Store";
 			position[]={1905.1871,6.9582057,2267.8406};
 			name="GenStore2_objSpawn";
 			type="Empty";
@@ -2721,6 +2810,7 @@ class Mission
 		};
 		class Item63
 		{
+		    comment="Vybor General Store";
 			position[]={3766.3909,310.98999,8886.9463};
 			name="GenStore3_objSpawn";
 			type="Empty";
@@ -3519,6 +3609,48 @@ class Mission
 			name="AHMission_17";
 			type="Empty";
 			colorName="ColorBrown";
+		};
+		class Item164
+		{
+			comment="Kraznostav General Store";
+			position[]={11239.6,0,12183.1};
+			name="GenStore4_objSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=75.75425;
+		};
+		class Item165
+		{
+			comment="Zelengorsk Gun Store";
+			position[]={2568.01,0,5060.01};
+			name="GunStore6_objSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=-7.7154613;
+		};
+		class Item166
+		{
+			comment="Gvozdno ATM";
+			position[]={8556.44,0,11966};
+			azimut=156.656;
+			id=165;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
+		class Item167
+		{
+			comment="Kraznostav ATM";
+			position[]={11541.6,0,12426.3};
+			azimut=238.76;
+			id=165;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
 		};
 	};
 };
