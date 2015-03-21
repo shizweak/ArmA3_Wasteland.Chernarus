@@ -2022,11 +2022,12 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=33;
+		items=31;
 		class Item0
 		{
-			position[]={13420.682,5.5103807,6211.2944};
-			azimut=181.91586;
+			comment="Nizhnoya ATM";
+            position[]={12951.5,-0.0245781,7996.15};
+            azimut=181.728;			
 			id=157;
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
@@ -2047,17 +2048,6 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={6494.5044,5.9788208,2679.1968};
-			azimut=665.76691;
-			id=159;
-			side="EMPTY";
-			vehicle="Land_Atm_02_F";
-			skill=0.60000002;
-			init="[this] call A3W_fnc_setupMissionATM";
-			description="DO NOT MODIFY IN EDITOR";
-		};
-		class Item3
-		{
 			position[]={1833.1526,5.9803019,2129.1433};
 			azimut=433.76288;
 			id=160;
@@ -2067,7 +2057,7 @@ class Mission
 			init="[this] call A3W_fnc_setupMissionATM";
 			description="DO NOT MODIFY IN EDITOR";
 		};
-		class Item4
+		class Item3
 		{
 			position[]={4492.9624,339,10809.729};
 			azimut=327.32608;
@@ -2078,7 +2068,7 @@ class Mission
 			init="[this] call A3W_fnc_setupMissionATM";
 			description="DO NOT MODIFY IN EDITOR";
 		};
-		class Item5
+		class Item4
 		{
 			position[]={12826.824,5.9788208,9924.7148};
 			azimut=117.74821;
@@ -2089,10 +2079,11 @@ class Mission
 			init="[this] call A3W_fnc_setupMissionATM";
 			description="DO NOT MODIFY IN EDITOR";
 		};
-		class Item6
+		class Item5
 		{
-			position[]={6113.3936,300.98999,7749.3608};
-			azimut=397.17297;
+			comment="Novy Sobor ATM";
+            position[]={7110.69,0,7672.61};
+            azimut=343.736;			
 			id=163;
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
@@ -2100,7 +2091,7 @@ class Mission
 			init="[this] call A3W_fnc_setupMissionATM";
 			description="DO NOT MODIFY IN EDITOR";
 		};
-		class Item7
+		class Item6
 		{
 			position[]={3898.522,310.99197,8838.5371};
 			azimut=823.4754;
@@ -2111,7 +2102,7 @@ class Mission
 			init="[this] call A3W_fnc_setupMissionATM";
 			description="DO NOT MODIFY IN EDITOR";
 		};
-		class Item8
+		class Item7
 		{
 			position[]={10137.41,244.99724,5469.5767};
 			azimut=673.32391;
@@ -2122,31 +2113,19 @@ class Mission
 			init="[this] call A3W_fnc_setupMissionATM";
 			description="DO NOT MODIFY IN EDITOR";
 		};
+		class Item8
+		{
+			comment="Soznovka ATM";
+            position[]={2489.54,0,6397.45};
+            azimut=263.775;
+			id=165;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="[this] call A3W_fnc_setupMissionATM";
+			description="DO NOT MODIFY IN EDITOR";
+		};
 		class Item9
-		{
-			comment="Gvozdno ATM";
-			position[]={8556.44,0,11966};
-			azimut=156.656;
-			id=165;
-			side="EMPTY";
-			vehicle="Land_Atm_02_F";
-			skill=0.60000002;
-			init="[this] call A3W_fnc_setupMissionATM";
-			description="DO NOT MODIFY IN EDITOR";
-		};
-		class Item10
-		{
-			comment="Zelengorsk ATM";
-			position[]={2598.9,0,5108.24};
-			azimut=312.058;
-			id=165;
-			side="EMPTY";
-			vehicle="Land_Atm_02_F";
-			skill=0.60000002;
-			init="[this] call A3W_fnc_setupMissionATM";
-			description="DO NOT MODIFY IN EDITOR";
-		};
-		class Item11
 		{
 			comment="Kraznostav ATM";
 			position[]={11541.6,0,12426.3};
@@ -2158,7 +2137,7 @@ class Mission
 			init="[this] call A3W_fnc_setupMissionATM";
 			description="DO NOT MODIFY IN EDITOR";
 		};
-		class Item12
+		class Item10
 		{
 			comment="Balota ATM";
 			position[]={4809.29,0,2558.24};
@@ -2170,7 +2149,7 @@ class Mission
 			init="[this] call A3W_fnc_setupMissionATM";
 			description="DO NOT MODIFY IN EDITOR";
 		};
-		class Item13
+		class Item11
 		{
 			comment="Guglova ATM";
 			position[]={8458.74,0,6685.5};
@@ -2182,7 +2161,7 @@ class Mission
 			init="[this] call A3W_fnc_setupMissionATM";
 			description="DO NOT MODIFY IN EDITOR";
 		};
-		class Item14
+		class Item12
 		{
 			comment="Mogalevka ATM";
             position[]={7614.32,0,5161.81};
@@ -2194,7 +2173,7 @@ class Mission
 			init="[this] call A3W_fnc_setupMissionATM";
 			description="DO NOT MODIFY IN EDITOR";
 		};
-		class Item15
+		class Item13
 		{
 			position[]={4570.2563,339,10649.234};
 			azimut=-31.033257;
@@ -2207,7 +2186,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item16
+		class Item14
 		{
 			position[]={10079.86,244.99182,5438.8574};
 			azimut=823.4754;
@@ -2220,7 +2199,7 @@ class Mission
 			init="this call A3W_fnc_setupResupplyTruck";
 			description="Service";
 		};
-		class Item17
+		class Item15
 		{
 			position[]={4806.6621,338.99435,10227.582};
 			azimut=-29.133097;
@@ -2233,7 +2212,7 @@ class Mission
 			init="this call A3W_fnc_setupResupplyTruck";
 			description="Service";
 		};
-		class Item18
+		class Item16
 		{
 			position[]={12110.286,159,12645.039};
 			azimut=-95.362686;
@@ -2246,7 +2225,7 @@ class Mission
 			init="this call A3W_fnc_setupResupplyTruck";
 			description="Service";
 		};
-		class Item19
+		class Item17
 		{
 			position[]={13044.045,6,10122.329};
 			azimut=-31.033257;
@@ -2259,7 +2238,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item20
+		class Item18
 		{
 			position[]={10195.745,6.0001683,2004.2129};
 			azimut=-63.931587;
@@ -2273,7 +2252,7 @@ class Mission
 			description="Sell Vehicle";
 		};
 
-		class Item21
+		class Item19
 		{
 			comment="NEAF Vehicle Seller";
 			position[]={12247.6,0,12588.3};
@@ -2287,7 +2266,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item22
+		class Item20
 		{
 			position[]={2575.8201,292.51199,6285.9502};
 			azimut=-63.931587;
@@ -2300,7 +2279,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item23
+		class Item21
 		{
 			position[]={1699.42,16.626801,2324.1799};
 			azimut=-63.931587;
@@ -2313,7 +2292,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item24
+		class Item22
 		{
 			position[]={5801.8301,127.33,4817.8501};
 			azimut=-63.931587;
@@ -2326,7 +2305,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item25
+		class Item23
 		{
 			position[]={7030.75,300.686,7821.9902};
 			azimut=-63.931587;
@@ -2339,7 +2318,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item26
+		class Item24
 		{
 			position[]={10064,245,5416};
 			azimut=-63.931587;
@@ -2352,7 +2331,7 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item27
+		class Item25
 		{
 			comment="Balota Aircraft Tent";
 			position[]={4626.7202,0.00036239601,2488.6699};
@@ -2363,7 +2342,7 @@ class Mission
 			skill=0.60000002;
 			init="this allowDamage false";
 		};
-		class Item28
+		class Item26
 		{
 			comment="Balota Aircraft Berm";
 			position[]={4612.4702,0.018407799,2483.1499};
@@ -2375,7 +2354,7 @@ class Mission
 			skill=0.60000002;
 			init="this allowDamage false";
 		};
-		class Item29
+		class Item27
 		{
 			comment="NWAF Aircraft Tent";
 			position[]={4238.5,0,10856.5};
@@ -2386,7 +2365,7 @@ class Mission
 			skill=0.60000002;
 			init="this allowDamage false";
 		};
-		class Item30
+		class Item28
 		{
 			comment="NWAF Aircraft Berm";
 			position[]={4252.1099,0,10863.5};
@@ -2397,7 +2376,7 @@ class Mission
 			skill=0.60000002;
 			init="this allowDamage false";
 		};
-		class Item31
+		class Item29
 		{
 			comment="NEAF Aircraft Tent";
 			position[]={11793.283,158.84378,12828.21};
@@ -2408,7 +2387,7 @@ class Mission
 			skill=0.60000002;
 			init="this allowDamage false";
 		};
-		class Item32
+		class Item30
 		{
 			comment="NEAF Aircraft Berm";
 			position[]={11779.184,158.93265,12834.11};

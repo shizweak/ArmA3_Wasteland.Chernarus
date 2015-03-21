@@ -349,23 +349,23 @@ throwputArray = compileFinal str
 	
 	//["M84 Stun Grenade", "rhs_ammo_m84", 100],
 	//["M19 AT", "rhs_mine_M19_ammo", 300]
-	//["Mini Grenade", "MiniGrenade", 50],
-	//["Frag Grenade", "HandGrenade", 100],
-	//["APERS Tripwire Mine", "APERSTripMine_Wire_Mag", 200],
-	//["APERS Bounding Mine", "APERSBoundingMine_Range_Mag", 250],
-	//["APERS Mine", "APERSMine_Range_Mag", 300],
-	//["Claymore Charge", "ClaymoreDirectionalMine_Remote_Mag", 350],
-	//["M6 SLAM Mine", "SLAMDirectionalMine_Wire_Mag", 350],
-	//["AT Mine", "ATMine_Range_Mag", 400],
-	//["Explosive Charge", "DemoCharge_Remote_Mag", 450],
-	//["Explosive Satchel", "SatchelCharge_Remote_Mag", 500],
-	//["Smoke Grenade (White)", "SmokeShell", 50],
-	//["Smoke Grenade (Purple)", "SmokeShellPurple", 50],
-	//["Smoke Grenade (Blue)", "SmokeShellBlue", 50],
-	//["Smoke Grenade (Green)", "SmokeShellGreen", 50],
-	//["Smoke Grenade (Yellow)", "SmokeShellYellow", 50],
-	//["Smoke Grenade (Orange)", "SmokeShellOrange", 50],
-	//["Smoke Grenade (Red)", "SmokeShellRed", 50]
+	["Mini Grenade", "MiniGrenade", 50],
+	["Frag Grenade", "HandGrenade", 100],
+	["APERS Tripwire Mine", "APERSTripMine_Wire_Mag", 200],
+	["APERS Bounding Mine", "APERSBoundingMine_Range_Mag", 250],
+	["APERS Mine", "APERSMine_Range_Mag", 300],
+	["Claymore Charge", "ClaymoreDirectionalMine_Remote_Mag", 350],
+	["M6 SLAM Mine", "SLAMDirectionalMine_Wire_Mag", 350],
+	["AT Mine", "ATMine_Range_Mag", 400],
+	["Explosive Charge", "DemoCharge_Remote_Mag", 450],
+	["Explosive Satchel", "SatchelCharge_Remote_Mag", 500],
+	["Smoke Grenade (White)", "SmokeShell", 50],
+	["Smoke Grenade (Purple)", "SmokeShellPurple", 50],
+	["Smoke Grenade (Blue)", "SmokeShellBlue", 50],
+	["Smoke Grenade (Green)", "SmokeShellGreen", 50],
+	["Smoke Grenade (Yellow)", "SmokeShellYellow", 50],
+	["Smoke Grenade (Orange)", "SmokeShellOrange", 50],
+	["Smoke Grenade (Red)", "SmokeShellRed", 50]
 ];
 
 //Gun Store Ammo List
