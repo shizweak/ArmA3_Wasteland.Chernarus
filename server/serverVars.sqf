@@ -57,12 +57,8 @@ mediumMilitaryVehicles =
 //  "B_MRAP_01_F",
 //  "O_MRAP_02_F",
 //  "I_MRAP_03_F"
-	"rhs_brm1k_tv",
-	"rhs_brm1k_msv",
-	"rhs_bmd1r",
 	"rhs_btr60_vdv",
-	"rhsusf_m113_usarmy",
-	"RHS_M2A2_wd"  
+	"rhsusf_m113_usarmy"
 ];
 
 //Water Vehicles - Random Spawns
