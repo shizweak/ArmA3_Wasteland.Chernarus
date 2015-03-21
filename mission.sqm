@@ -2136,7 +2136,6 @@ class Mission
 			init="[this] call A3W_fnc_setupMissionATM";
 			description="DO NOT MODIFY IN EDITOR";
 		};
-
 		class Item12
 		{
 			comment="Kraznostav ATM";
@@ -2173,8 +2172,6 @@ class Mission
 			init="[this] call A3W_fnc_setupMissionATM";
 			description="DO NOT MODIFY IN EDITOR";
 		};
-
-
 		class Item15
 		{
 			position[]={10079.86,244.99182,5438.8574};
@@ -3666,30 +3663,6 @@ class Mission
 			type="Empty";
 			colorName="ColorBlack";
 			angle=-7.7154613;
-		};
-		class Item166
-		{
-			comment="Gvozdno ATM";
-			position[]={8556.44,0,11966};
-			azimut=156.656;
-			id=165;
-			side="EMPTY";
-			vehicle="Land_Atm_02_F";
-			skill=0.60000002;
-			init="[this] call A3W_fnc_setupMissionATM";
-			description="DO NOT MODIFY IN EDITOR";
-		};
-		class Item167
-		{
-			comment="Kraznostav ATM";
-			position[]={11541.6,0,12426.3};
-			azimut=238.76;
-			id=165;
-			side="EMPTY";
-			vehicle="Land_Atm_02_F";
-			skill=0.60000002;
-			init="[this] call A3W_fnc_setupMissionATM";
-			description="DO NOT MODIFY IN EDITOR";
 		};
 	};
 };
