@@ -1372,14 +1372,14 @@ helicoptersArray = compileFinal str
 	//["AH-64D Apache Wood", "rhs_ah64d_wd", 85000, "vehicle"],
 	//["AH-64D Apache Desert", "rhs_ah64d", 85000, "vehicle"],
 
-	["CH-47 Chinook Wood", "rhs_ch_47f", 9500, "vehicle"],
+	["MH-9 Hummingbird", "B_Heli_Light_01_F", 5000, "vehicle"], // MH-6
 	["UH-60M Woodland", "rhs_uh60m", 8000, "vehicle"],
 	["UH-60M MEV Woodland", "rhs_uh60m_mev", 8000, "vehicle"],
-	["AH-9 Pawnee", "B_Heli_Light_01_armed_F", 30000, "vehicle"]
+	["CH-47 Chinook Wood", "rhs_ch_47f", 9500, "vehicle"],	
+	["AH-9 Pawnee", "B_Heli_Light_01_armed_F", 30000, "vehicle"]	
 
 /*
 	["M-900 Civilian", "C_Heli_Light_01_civil_F", 4000, "vehicle"], // MH-6, no flares
-	["MH-9 Hummingbird", "B_Heli_Light_01_F", 5000, "vehicle"], // MH-6
 	["PO-30 Orca (Black)", "O_Heli_Light_02_unarmed_F", 7000, "vehicle"], // Ka-60
 	["WY-55 Hellcat (Green)", "I_Heli_light_03_unarmed_F", 7000, "vehicle"], // AW159
 	["Mi-290 Taru (Crane) [DLC]", "O_Heli_Transport_04_F", 7500, "vehicle"], // CH-54
