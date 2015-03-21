@@ -14,6 +14,7 @@ storeOwnerConfig = compileFinal str
 	["GenStore2", 6, 165, []],  // Kamenka General Store
 	["GenStore3", 6, 295, []],  // Vybor General Store
 	["GenStore4", 2, 120, []],  // Krasnostav General Store
+	["GenStore5", 2, 120, []],  // Krasnostav General Store
 
 	["GunStore1", 3, 90, []],   // Solnichniy Gun Store
 	["GunStore3", 6, 165, []],  // Gvodzno Gun Store
