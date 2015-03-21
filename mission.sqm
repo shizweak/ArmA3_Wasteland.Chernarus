@@ -3373,7 +3373,7 @@ class Mission
 		class Item130
 		{
 			position[]={12739.826,5.9964356,9653.6494};
-			name="TERRITORY_0_BEREZINO_B";
+			name="TERRITORY_1_BEREZINO_B";
 			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorYellow";
@@ -3385,7 +3385,7 @@ class Mission
 		class Item131
 		{
 			position[]={11960.273,53.993538,9089.5742};
-			name="TERRITORY_0_BEREZINO_C";
+			name="TERRITORY_1_BEREZINO_C";
 			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorYellow";
