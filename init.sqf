@@ -68,6 +68,9 @@ if (isServer) then
 	[] execVM "server\init.sqf";
 };
 
+// init static bases
+[] execVM "addons\static_bases\init.sqf";
+
 //init 3rd Party Scripts
 [] execVM "addons\vactions\functions.sqf";
 [] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
